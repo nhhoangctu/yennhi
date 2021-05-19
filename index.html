@@ -11,9 +11,7 @@
 		margin:auto;
 		width: 85%
 	}
-	.displayHTML{
-		display: none;
-	}
+
 
 </style>
 <body id="myPage" class="w3-serif">
@@ -38,7 +36,7 @@
 			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">PHỤ TÙNG</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">LIÊN HỆ</a>
 			<div class="w3-hide-medium">
-				<input type="text" class="w3-bar-item w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" placeholder="Search..">
+				<input type="text" class="w3-bar-item w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" style="width: 150px" placeholder="Search..">
 				<button class="w3-bar-item w3-button w3-green w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">Go</button>
 			
 			</div>
@@ -183,7 +181,7 @@
 					<ul class="w3-ul">
 						<li class="w3-hover-text-red w3-border-0"><b>Địa chỉ: <span class="w3-text-indigo">Chi nhánh Miền Tây 
 						Trạm dừng chân cầu Cần Thơ, QL 1A, P. Hưng Phú, Q. Cái Răng, TP. Cần Thơ</span></b></li>
-						<li class="w3-hover-text-red w3-border-0"><b>Website: <span class="w3-text-indigo">https://thegioichenglong.com</span></b></li>
+						<li class="w3-hover-text-red w3-border-0"><b>Website: <span class="w3-text-indigo">http://thegioichenglong.com</span></b></li>
 						<li class="w3-hover-text-red w3-border-0"><b>Email: <span class="w3-text-indigo">ttyennhi92@gmail.com</span></b></li>
 						<li class="w3-hover-text-red w3-border-0"><b>Hotline1: <span class="w3-text-indigo">0933610331 - Ms.Nhi</span></b></li>
 						<li class="w3-hover-text-red w3-border-0"><b>Hotline2: <span class="w3-text-indigo">0931516154 - Ms.Nhi</span></b></li>
@@ -258,7 +256,7 @@
 	</div>
 
 	<!-- Foolter -->
-	<div class="w3-container w3-indigo w3-center w3-padding w3-small w3-red">All rights reserved © 2021. CÔNG TY TNHH Ô TÔ HẢI ÂU <br> Chi nhánh Miền Tây. <br> Website: http://thegioichenglong.com</div>
+	<div class="w3-container w3-indigo w3-center w3-padding">All rights reserved ©2021.<br> CÔNG TY TNHH Ô TÔ HẢI ÂU - Chi nhánh Miền Tây. <br> Website: http://thegioichenglong.com</div>
 	<script>
 		var myIndex = 0;
 		carousel();
@@ -282,13 +280,6 @@
 			else
 				x.className = x.className.replace(" w3-show", "");
 
-			var y = document.getElementById("hiddenLogo");
-			// if (y.className.indexOf("w3-hide")==-1)
-			// 	y.className += " w3-hide";
-			// else
-			// 	y.className = y.className.replace(" w3-hide", "");
-			y.classList.toggle("displayHTML");
-
 		}
 
 		function showProducts(){
@@ -298,7 +289,7 @@
 			else
 				x.className = x.className.replace(" w3-show", "");
 		}
-
+		
 	</script>
 </body>
 </html>
