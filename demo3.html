@@ -3,54 +3,16 @@
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+<body class="w3-container w3-auto">
 
-<div class="w3-container">
-  <h2>Slideshow Indicators</h2>
-  <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
+<h2>Display Warnings</h2>
+<p>The w3-panel class can be used to display warnings:</p>
+
+<div class="w3-panel w3-indigo w3-border">
+  <h3>Warning!</h3>
+  <p>Yellow often indicates a warning that might need attention.</p>
 </div>
 
-<div class="w3-content" style="max-width:1200px">
-  <img class="mySlides" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;display:none">
-  <img class="mySlides" src="https://www.w3schools.com/w3css/img_snow_wide.jpg" style="width:100%">
-  <img class="mySlides" src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%;display:none">
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1, 'mySlides', 'demo')">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_snow_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2, 'mySlides', 'demo')">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3, 'mySlides', 'demo')">
-    </div>
-  </div>
-</div>
-
-<script>
-// function currentDiv(n, mySlides, demo) {
-//   showDivs(slideIndex = n, mySlides, demo);
-// }
-
-function currentDiv(n, mySlides, demo) {
-  var i;
-  var x = document.getElementsByClassName(mySlides);
-  var dots = document.getElementsByClassName(demo);
-  slideIndex=n;
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
-</script>
 
 </body>
 </html>
-
