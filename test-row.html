@@ -14,13 +14,7 @@
 	</style>	
 </head>
 <body class="w3-serif">
-	<!--  -->
-	
-	<div class="w3-bottom" style="width: 100%">
-		<a href="#top" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Về đầu trang</a>
-		<a href="#sanpham" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Menu sản phẩm</a>
-	</div>
-	
+
 	<!-- Nav bar -->
 	<div class="w3-indigo w3-card w3-large w3-center">
 		<div class="w3-bar">
@@ -28,7 +22,7 @@
 			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
 			<!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a> -->
 			<div class="w3-dropdown-hover w3-mobile ">
-				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
+				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">SẢN PHẨM</a>
 				<!-- <div class="w3-dropdown-content w3-bar-block">
 					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
 					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
@@ -40,7 +34,7 @@
 			</div>
 			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">DỊCH VỤ</a>
 			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">PHỤ TÙNG</a>
-			<a href="#news" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TIN TỨC</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TIN TỨC</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">LIÊN HỆ</a>
 <!-- 				<div class="w3-hide-medium">
 					<input type="text" class="w3-bar-item w3-button w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" style="width: 150px" placeholder="Search..">
@@ -55,7 +49,7 @@
 				<a href="" class="w3-bar-item w3-button">GIỚI THIỆU</a>
 				<div class="w3-mobile ">
 					<!-- <button class="w3-button w3-hover-yellow w3-padding" onclick="showProducts()">SẢN PHẨM <i class="fa fa-caret-down"></i></button> -->
-					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow" >SẢN PHẨM <i class="fa fa-caret-down"></i></a>
+					<a href="#sanpham" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow" >SẢN PHẨM <i class="fa fa-caret-down"></i></a>
 					<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="products">
 						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
 						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
@@ -77,19 +71,19 @@
 		<!-- Logo and contact -->
 		<div class="w3-container w3-border-bottom w3-border-indigo w3-padding w3-light-grey">
 			<div class="w3-row">
-				<div class="w3-quarter w3-light-grey w3-padding w3-center w3-margin-top">
+				<div class="w3-quarter w3-padding w3-center w3-margin-top">
 					<img src="img/logo/logohaihau.png" alt="Logo Hải Âu" style="width: 55%" id="hiddenLogo">
 				</div>
-				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium ">
+				<div class="w3-quarter w3-padding w3-large w3-hide-small w3-hide-medium ">
 					<i class="fa fa-phone w3-green w3-large w3-padding w3-round w3-margin-bottom"> </i><a href="tel:0933610331" style="text-decoration: none"><span class="w3-text-red"><b> 0933 610 331</b></span> - <a href="tel:0931516154" style="text-decoration: none"><span class="w3-text-red"><b> 0931 516 154</b></span> <br></a>
 					<i class="fa fa-envelope w3-khaki w3-large w3-padding w3-round"> </i><a href="mailto: ttyenhi92@gmail.com" style="text-decoration: none"><span class="w3-text-red"><b> ttyenhi92@gmail.com</b></span></a><br>
 				</div>
-				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium">
+				<div class="w3-quarter w3-padding w3-large w3-hide-small w3-hide-medium">
 					<a href="https://www.facebook.com/buon.vui.3192" style="text-decoration: none"><i class="fa fa-facebook w3-indigo w3-large w3-padding w3-round w3-margin-bottom"></i> <b> Facebook</b></a><br>
 					<a href="https://www.youtube.com/results?search_query=xe+cheng+long" style="text-decoration: none;"><i class="fa fa-youtube w3-red w3-large w3-padding w3-round"></i><b> Youtube</b></a> <br>
 
 				</div>
-				<div class="w3-quarter w3-light-grey w3-padding w3-hide-small w3-hide-medium">
+				<div class="w3-quarter w3-padding w3-hide-small w3-hide-medium">
 					<img src="img/logo/chenglong-nobg.png" alt="Logo ChengLong" style="width: 80%; height: 83px">
 				</div>
 			</div>
@@ -109,22 +103,19 @@
 		<div class="w3-center w3-indigo" id="sanpham">
 			<h2 class="w3-center w3-text-white">Sản phẩm xe của Thế giới ChengLong</h2>
 			<div class="w3-indigo w3-large w3-bar w3-border-top">
-				<a href="#xetaithung" class="w3-bar-item w3-button w3-padding tablink w3-red" onclick="openCategory(event, 'xetaithung')">Xe Tải thùng</a>
-				<a href="#xeben" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'xeben')">Xe Ben</a>
-				<a href="#xebon" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'xebon')">Xe Bồn</a>
-				<a href="#xedaukeo" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'xedaukeo')">Xe Đầu kéo</a>
-				<a href="#somiromooc" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'somiromooc')">Sơ mi rơ moóc</a>
+				<a href="#xetaithung" class="w3-bar-item w3-button w3-padding tablink">Xe Tải thùng</a>
+				<a href="#xeben" class="w3-bar-item w3-button w3-padding tablink">Xe Ben</a>
+				<a href="#xebon" class="w3-bar-item w3-button w3-padding tablink">Xe Bồn</a>
+				<a href="#xedaukeo" class="w3-bar-item w3-button w3-padding tablink">Xe Đầu kéo</a>
+				<a href="#xesomiromooc" class="w3-bar-item w3-button w3-padding tablink">Xe Sơ mi rơ moóc</a>
 			</div>
 		</div>
 		<!-- End Refer sản phẩm-->
 
 		<!-- Xe tải thùng -->
-		<div class="w3-padding-32 w3-light-grey category">
-			<div id="xetaithung" class="w3-container w3-indigo" style="width:20%">
-				<h3>XE TẢI THÙNG</h3>
-			</div>
+		<div id="xetaithung" class="w3-padding-32 w3-light-grey category">
 			<div class="w3-row-padding">
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe tải thùng 2 chân</b></div>
 					<img src="img/img-products/2 chan mui bat/0.jpg" alt="Xe tải thùng 2 chân mui bạt" style="width: 100%">
 					<div class="w3-row">
@@ -138,7 +129,7 @@
 				</div>
 
 
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe tải thùng 3 chân</b></div>
 					<img src="img/img-products/3 chan mui bat/0.jpg" alt="Xe tải thùng 3 chân mui bạt" style="width: 100%">
 					<div class="w3-row">
@@ -151,7 +142,7 @@
 					</div>
 				</div>
 
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe tải thùng 4 chân</b></div>
 					<img src="img/img-products/4 chan mui bat/0.jpg" alt="Xe tải thùng 4 chân mui bạt" style="width: 100%">
 					<div class="w3-row">
@@ -164,7 +155,7 @@
 					</div>
 				</div>
 
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe tải thùng 5 chân</b></div>
 					<img src="img/img-products/5 chan mui bat/0.jpg" alt="Xe tải thùng 5 chân mui bạt" style="width: 100%">
 					<div class="w3-row">
@@ -181,12 +172,9 @@
 		<!-- End xe tải thùng -->
 
 		<!-- Xe ben -->
-		<div class="w3-padding-32 w3-light-grey category">
-			<div class="w3-container w3-indigo" style="width:20%">
-				<h3 id="xeben">XE BEN</h3>
-			</div>
+		<div id="xeben" class="w3-padding-32 w3-light-grey category">
 			<div class="w3-row-padding">
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Ben 3 chân - cầu dầu</b></div>
 					<img src="img/img-products/Ben 3 chan - cau dau/0.jpg" alt="Ben 3 chan - cau dau" style="width: 100%; height: 270px">
 					<div class="w3-row">
@@ -199,7 +187,7 @@
 					</div>
 				</div>
 
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Ben 4 chân - cầu dầu</b></div>
 					<img src="img/img-products/Ben 4 chan - cau dau/0.jpg" alt="Ben 4 chan - cau dau" style="width: 100%; height: 270px">
 					<div class="w3-row">
@@ -218,12 +206,9 @@
 		<!-- End xe ben-->
 
 		<!-- Xe bồn -->
-		<div class="w3-padding-32 w3-light-grey category">
-			<div class="w3-container w3-indigo" style="width:20%">
-				<h3 id="xebon">XE BỒN</h3>
-			</div>
+		<div id="xebon" class="w3-padding-32 category">
 			<div class="w3-row-padding">
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe bồn</b></div>
 					<img src="img/img-cards/san-pham-khac-xe-tai-chenlong.jpg" alt="Xe tải thùng" style="width: 100%">
 					<div class="w3-row">
@@ -240,12 +225,9 @@
 		<!-- End xe bồn -->
 
 		<!-- Xe đầu kéo -->
-		<div class="w3-padding-32 w3-light-grey category">
+		<div id="xedaukeo" class="w3-padding-32 w3-light-grey category">
 			<div class="w3-row-padding">
-				<div class="w3-container w3-indigo" style="width:20%">
-					<h3 id="xedaukeo" >XE ĐẦU KÉO</h3>
-				</div>
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe đầu kéo 1 cầu 270 - cầu láp</b></div>
 					<img src="img/img-products/Xe dau keo 270/0.jpg" alt="Xe đầu kéo 1 cầu 270 - cầu láp" style="width: 100%; height: 270px">
 					<div class="w3-row">
@@ -258,7 +240,7 @@
 					</div>
 				</div>
 
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe đầu kéo 2 cầu 385 - cầu láp</b></div>
 					<img src="img/img-products/Xe dau keo 385/0.jpg" alt="Xe đầu kéo 2 cầu 385 - cầu láp" style="width: 100%; height: 270px">
 					<div class="w3-row">
@@ -271,7 +253,7 @@
 					</div>
 				</div>
 
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe đầu kéo 2 cầu 420 - cầu láp</b></div>
 					<img src="img/img-products/Xe dau keo 420/0.jpg" alt="Xe đầu kéo 2 cầu 420 - cầu láp" style="width: 100%; height: 270px">
 					<div class="w3-row">
@@ -284,7 +266,7 @@
 					</div>
 				</div>
 
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Xe đầu kéo 2 cầu 480 - cầu láp</b></div>
 					<img src="img/img-products/Xe dau keo 480/0.jpg" alt="Xe đầu kéo 2 cầu 480 - cầu láp" style="width: 100%; height: 270px">
 					<div class="w3-row">
@@ -303,20 +285,17 @@
 		<!-- End xe đầu kéo -->
 
 		<!-- Xe Sơ mi rơ mooc -->
-		<div class="w3-padding-32 w3-light-grey category">
-			<div class="w3-container w3-indigo" style="width:20%">
-				<h3 id="somiromooc">SƠ MI RƠ MOÓC</h3>
-			</div>
+		<div id="xesomiromooc" class="w3-padding-32 w3-light-grey category">
 			<div class="w3-row-padding">
-				<div class="w3-quarter w3-light-grey w3-display-container">
+				<div class="w3-quarter w3-display-container w3-margin-bottom">
 					<div class="w3-display-topleft w3-padding w3-yellow w3-container w3-large w3-text-red"><b>Sơ mi rơ moóc</b></div>
-					<img src="img/img-products/Xe dau keo 270/0.jpg" alt="Sơ mi rơ moóc" style="width: 100%; height: 270px">
+					<img src="img/img-products/Xe dau keo 270/0.jpg" alt="Xe Sơ mi rơ moóc" style="width: 100%; height: 270px">
 					<div class="w3-row">
 						<div class="w3-half">
 							<a href="tel:0933610331" class="w3-button w3-green" style="width: 100%"><span class="fa fa-phone"></span> Gọi ngay</a>
 						</div>
 						<div class="w3-half">
-							<a href="javascript:void(0)" class="w3-button w3-red" style="width: 100%" onclick="showModal('contentsomiromooc')"><span class="fa fa-edit"></span> Xem chi tiết</a>
+							<a href="javascript:void(0)" class="w3-button w3-red" style="width: 100%" onclick="showModal('contentXesomiromooc')"><span class="fa fa-edit"></span> Xem chi tiết</a>
 						</div>
 					</div>
 				</div>
@@ -732,7 +711,7 @@
 
 		<!-- TIN TUC -->
 		<div class="w3-container">
-			<h2 class="w3-center w3-text-white w3-indigo" id="news">TIN TỨC NỔI BẬT</h2>
+			<h2 class="w3-center w3-text-white w3-indigo">TIN TỨC NỔI BẬT</h2>
 			<div class="w3-row-padding">
 				<div class="w3-third">
 					<img src="img/news/DSC02515.jpg" alt="" style="width: 100%; height: 300px">
@@ -741,6 +720,16 @@
 				</div>
 				<div class="w3-third">
 					<img src="img/news/DSC02249.jpg" alt="" style="width: 100%; height: 300px">
+					<h4>Ô TÔ HẢI ÂU TRANG TRỌNG TỔ CHỨC LỄ BÀN GIAO LÔ 10 XE ĐẦU KÉO CHENGLONG CHO VẬN TẢI ĐỒNG LỢI</h4>
+					<p>Vào sáng ngày 10/5 vừa qua, tại Trung tâm 4S Hưng Yên, công ty Ô tô Hải Âu đã trang trọng tổ chức Lễ bàn giao lô 10 xe đầu kéo Chenglong 6x4 385HP cho công ty vận tải Đồng Lợi. </p>
+				</div>
+				<div class="w3-third">
+					<img src="img/news/_MG_9363.jpg" alt="" style="width: 100%; height: 300px">
+					<h4>Ô TÔ HẢI ÂU TRANG TRỌNG TỔ CHỨC LỄ BÀN GIAO LÔ 10 XE ĐẦU KÉO CHENGLONG CHO VẬN TẢI ĐỒNG LỢI</h4>
+					<p>Vào sáng ngày 10/5 vừa qua, tại Trung tâm 4S Hưng Yên, công ty Ô tô Hải Âu đã trang trọng tổ chức Lễ bàn giao lô 10 xe đầu kéo Chenglong 6x4 385HP cho công ty vận tải Đồng Lợi. </p>
+				</div>
+				<div class="w3-third">
+					<img src="img/news/_MG_9363.jpg" alt="" style="width: 100%; height: 300px">
 					<h4>Ô TÔ HẢI ÂU TRANG TRỌNG TỔ CHỨC LỄ BÀN GIAO LÔ 10 XE ĐẦU KÉO CHENGLONG CHO VẬN TẢI ĐỒNG LỢI</h4>
 					<p>Vào sáng ngày 10/5 vừa qua, tại Trung tâm 4S Hưng Yên, công ty Ô tô Hải Âu đã trang trọng tổ chức Lễ bàn giao lô 10 xe đầu kéo Chenglong 6x4 385HP cho công ty vận tải Đồng Lợi. </p>
 				</div>
@@ -751,32 +740,16 @@
 				</div>
 			</div>
 
-			<div class="w3-row-padding">
-				<div class="w3-third">
-					<img src="img/news/DSC02515.jpg" alt="" style="width: 100%; height: 300px">
-					<h4>Ô TÔ HẢI ÂU TRANG TRỌNG TỔ CHỨC LỄ BÀN GIAO LÔ 10 XE ĐẦU KÉO CHENGLONG CHO VẬN TẢI ĐỒNG LỢI</h4>
-					<p>Vào sáng ngày 10/5 vừa qua, tại Trung tâm 4S Hưng Yên, công ty Ô tô Hải Âu đã trang trọng tổ chức Lễ bàn giao lô 10 xe đầu kéo Chenglong 6x4 385HP cho công ty vận tải Đồng Lợi. </p>
-				</div>
-				<div class="w3-third">
-					<img src="img/news/DSC02249.jpg" alt="" style="width: 100%; height: 300px">
-					<h4>Ô TÔ HẢI ÂU TRANG TRỌNG TỔ CHỨC LỄ BÀN GIAO LÔ 10 XE ĐẦU KÉO CHENGLONG CHO VẬN TẢI ĐỒNG LỢI</h4>
-					<p>Vào sáng ngày 10/5 vừa qua, tại Trung tâm 4S Hưng Yên, công ty Ô tô Hải Âu đã trang trọng tổ chức Lễ bàn giao lô 10 xe đầu kéo Chenglong 6x4 385HP cho công ty vận tải Đồng Lợi. </p>
-				</div>
-				<div class="w3-third">
-					<img src="img/news/_MG_9363.jpg" alt="" style="width: 100%; height: 300px">
-					<h4>Ô TÔ HẢI ÂU TRANG TRỌNG TỔ CHỨC LỄ BÀN GIAO LÔ 10 XE ĐẦU KÉO CHENGLONG CHO VẬN TẢI ĐỒNG LỢI</h4>
-					<p>Vào sáng ngày 10/5 vừa qua, tại Trung tâm 4S Hưng Yên, công ty Ô tô Hải Âu đã trang trọng tổ chức Lễ bàn giao lô 10 xe đầu kéo Chenglong 6x4 385HP cho công ty vận tải Đồng Lợi. </p>
-				</div>
-			</div>
+			
 		</div>
 		<!-- END TIN TUC -->
 
 		<!-- Contant & Goole Maps -->
-		<div class="w3-container w3-border-top w3-border-bottom">
+		<div id="contact" class="w3-container w3-border-top w3-border-bottom">
 			<div class="w3-row">
 
 				<div class="w3-half w3-padding-32">
-					<div class="w3-container"><h4><b class="w3-text-red" id="contact"> CÔNG TY TNHH Ô TÔ HẢI ÂU</b></h4></div>
+					<div class="w3-container"><h4><b class="w3-text-red"> CÔNG TY TNHH Ô TÔ HẢI ÂU</b></h4></div>
 					<div>
 						<ul class="w3-ul">
 							<li class="w3-hover-text-red w3-border-0"><b><span class="w3-text-indigo">Chi nhánh Miền Tây 
