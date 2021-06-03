@@ -1,19 +1,71 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body class="w3-container w3-auto">
+<head>
+  <title>Thế giới Cheng Long</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="shortcut icon" href="img/logohaihau-title.png">
+  <style>
+    .center{
+      margin:auto;
+      width: 85%
+    }
 
-<a href="javascript:void(0)" class="w3-button" onclick="document.getElementById('demo').style.display='block';">Open</a>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<div class="w3-modal"  id="demo">
-  <div class="w3-panel w3-border w3-modal-content">
-  <h3>Warning!</h3>
-  <p>Yellow often indicates a warning that might need attention.</p>
-</div>
+  </style>
+</head>
+<body>
+  <div class="w3-container w3-center w3-hide-small">
+    <div class="w3-bar">
+      <button class="w3-bar-item w3-red w3-button">Link1</button>
+      <button class="w3-bar-item w3-red w3-button">Link2</button>
+      <button class="w3-bar-item w3-red w3-button">Link3</button>
+      <button class="w3-bar-item w3-red w3-button">Link4</button>
+      <button class="w3-bar-item w3-red w3-button">Link5</button>
+      <button class="w3-bar-item w3-red w3-button">Link6</button>
+    </div>
+  </div>
 
-</div>
 
+  <div class="w3-container">
+    <div class="w3-bar-block">
+      <span class="w3-red w3-right w3-padding" onclick="document.getElementById('subMenu').style.display='block';">X</span>
+      <div  id="subMenu" style="display: none;">
+        <!-- <span class="w3-red w3-left w3-padding" onclick="document.getElementById('subMenu').style.display='none';">Xxxxxxxx</span> -->
+        <button class="w3-button w3-bar-item w3-blue" onclick="document.getElementById('subMenu').style.display='none';">X</button>
+        <button class="w3-button w3-bar-item w3-blue">Link1</button>
+        <button class="w3-button w3-bar-item w3-blue">Link2</button>
+        <button class="w3-button w3-bar-item w3-blue">Link3</button>
+        <button class="w3-button w3-bar-item w3-blue">Link4</button>
+        <button class="w3-button w3-bar-item w3-blue">Link5</button>
+        <button class="w3-button w3-bar-item w3-blue">Link6</button>
+      </div>
+    </div>
+  </div>
+
+
+  <button onclick="myFunction()">Toggle</button>
+  <p class="flag w3-show">Show</p>
+  <p class="flag w3-hide">Hide</p>
 </body>
+
+<script>
+  function myFunction(){
+    var Things = document.getElementsByClassName('flag');
+    for (var i = 0; i < Things.length; i++) {
+      if (Things[i].className.indexOf("w3-hide")==-1) {
+        Things[i].className = Things[i].className.replace(" w3-show", " w3-hide");
+      } 
+
+      if (Things[i].className.indexOf("w3-show")==-1) {
+        Things[i].className = Things[i].className.replace(" w3-hide", " w3-show");
+      } 
+    }
+  }
+</script>
 </html>

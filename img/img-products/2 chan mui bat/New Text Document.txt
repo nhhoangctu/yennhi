@@ -1,0 +1,39 @@
+Model	LZ4256H7DB(CẦU LÁP)
+Động cơ	Nhà máy sản xuất: Yuchai, model động cơ YC6MK385-50, tiêu chuẩn khí thải Euro IV, hệ thống phun nhiên liệu điện tử common-rail+bộ xử lý khí thải SCR
+Xilanh thẳng hàng-4kỳ, có tubo tăng áp
+Số xilanh động cơ- đường kính xilanh: 6-123×145
+Công suất cực đại 385hp(285 kW), tốc độ vòng quay: 1900r/min
+Mô men xoắn cực đại: 1800 Nm tại 1100-1500 r/min
+Dung tích : 10338 cm3, tỷ số nén 17,5:0
+Lượng tiêu thụ nhiên liệu: ≤ 190g/kWh
+
+Ly hợp	Ly hợp ma sát thủy lực, có trợ lực khí nén.
+Đường kính : Ø 430 hiệu EATON
+
+Hộp số	Model: 12JSD180TA (FAST công nghệ Mỹ) , cơ khí 12 số tiến 02 lùi, có đồng tốc
+Trục trước	Tải trọng cầu 7 tấn
+Trục sau	Tải trọng cầu 13 tấn, tỷ số truyền: 4.444
+Khung chassi	Loại hình thang,2 lớp, tiết diện chữ U 282(8+4) mm
+Hệ thống treo trước: 9 lá nhíp, dạng bán elip, thanh cân bằng, thủy lực
+Hệ thống treo sau: 12 lá nhíp, dạng bán elip
+Thùng nhiên liệu: 600 L hợp kim nhôm có nắp khóa nhiên liệu.
+Van WABCO, có phanh ABS
+
+Hệ thống lái	Trục vít – êcu bi, có trợ lực thủy lực.
+Góc quay tối đa bánh trong 48o , bánh ngoài 36o
+
+Hệ thống phanh	Phanh tang trống, dẫn động khí nén, bầu tích năng tác dụng bánh xe sau, có phanh khí xả động cơ
+Phanh chống bó cứng ABS
+
+Lốp và mâm xoay	Cỡ lốp 12RR22.5-18PR(lốp bố thép), hiệu Linglong,
+Mâm xoay 90 hoặc 50, có khóa hãm, hiệu JOST 
+Cabin	Model: H7, cabin lật chuyển bằng điện, ghế lái bóng hơi, gương điều chỉnh điện, kính điều chỉnh điện có điều hòa, radio, 2 giường, 2 ghế ngồi
+Ắc quy	Ắc quy khô, điện áp 12V(150Ah) x 2
+Kích thước	Chiều dài cơ sở: 3300+1350, vết trước : 2080, vết sau 1860/1860
+Kích thước bao: 6890x2495x3890mm
+Tự trọng	Tự trọng (kg) / Tổng tải trọng (kg): 9500/24995
+Sức kéo: 39300
+
+Hiệu suất	Tốc độ tối ưu (km/ h)                         100
+Khả năng leo dốc tối da(%)                 25         
+Bán kính quay vòng tối thiểu (m)        18
