@@ -31,21 +31,18 @@
 			width: 100%;
 			border-collapse: collapse;
 		}
+
+		.w3-mytext-align-right{
+			text-align: right;
+		}
 	</style>	
 </head>
-<body class="w3-serif">
-	<!--  -->
-	
-	<div class="w3-bottom" style="width: 100%">
-		<a href="#top" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Về đầu trang</a>
-		<a href="#sanpham" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Menu sản phẩm</a>
-	</div>
-	
+<body class="w3-serif">	
 	<!-- Nav bar -->
 	<div class="w3-indigo w3-card w3-large w3-center">
 		<div class="w3-bar">
 			<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="img/logo/logo.png" alt=""></a> -->
-			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
+			<a href="index.html" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
 			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
 			<div class="w3-dropdown-hover w3-mobile ">
 				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
@@ -72,7 +69,7 @@
 
 
 			<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="barItems">
-				<a href="" class="w3-bar-item w3-button">TRANG CHỦ</a>
+				<a href="index.html" class="w3-bar-item w3-button">TRANG CHỦ</a>
 				<a href="" class="w3-bar-item w3-button">GIỚI THIỆU</a>
 				<div class="w3-mobile ">
 					<!-- <button class="w3-button w3-hover-yellow w3-padding" onclick="showProducts()">SẢN PHẨM <i class="fa fa-caret-down"></i></button> -->
@@ -118,24 +115,25 @@
 		<!-- END Logo and contact -->
 
 		<!-- Slideshow -->
-		<div class="w3-border">
+<!-- 		<div class="w3-border">
 			<img class="mySlides" src="img\slide-show\xe-dau-keo-chenglong-hai-au-2222.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
 			<img class="mySlides" src="img\slide-show\slide1-01-01-01.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
 			<img class="mySlides" src="img\slide-show\slide-1-1-1550x550.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
-		</div>
+		</div> -->
 		<!--  END Slideshow-->
 
 
 		<div class="w3-center">
 			<div class="w3-bar">
-				<button class="w3-bar-item w3-button w3-padding"><span class="w3-green w3-text-white w3-round w3-padding fa fa-wrench fa-4x"></span><br><b>CHẾ ĐỘ BẢO HÀNH XE</b></button>
-				<button class="w3-bar-item w3-button w3-padding"><span class="w3-green w3-text-white w3-round w3-padding fa fa-pencil-square-o fa-4x"></span><br><b>ĐIỀU KHOẢN BẢO HÀNH</b></button>
-				<button class="w3-bar-item w3-button w3-padding"><span class="w3-green w3-text-white w3-round w3-padding fa fa-user fa-4x"></span><br><b>HỆ THỐNG DỊCH VỤ</b></button>
+				<a href="#Chedobaohanh" class="w3-bar-item w3-button w3-padding groupTab w3-border w3-red" onclick="activeTab(event, 'Chedobaohanh')"><span class="w3-green w3-text-white w3-round w3-padding fa fa-wrench fa-4x"></span><br><b>CHẾ ĐỘ BẢO HÀNH XE</b></a>
+				<a href="#Dieukhoanbaohanhxe" class="w3-bar-item w3-button w3-padding groupTab w3-border" onclick="activeTab(event, 'Dieukhoanbaohanhxe')"><span class="w3-green w3-text-white w3-round w3-padding fa fa-pencil-square-o fa-4x"></span><br><b>ĐIỀU KHOẢN BẢO HÀNH</b></a>
+				<a href="#Hethongdichvu" class="w3-bar-item w3-button w3-padding groupTab w3-border" onclick="activeTab(event, 'Hethongdichvu')"><span class="w3-green w3-text-white w3-round w3-padding fa fa-user fa-4x"></span><br><b>HỆ THỐNG DỊCH VỤ</b></a>
 			</div>
 		</div>
 		<!-- CHẾ ĐỘ BẢO HÀNH -->
-		<div class="w3-container w3-padding w3-hoverable w3-large">
-			<table>
+		<div id="Chedobaohanh" class="w3-padding w3-hoverable w3-large itemTab">
+			<div class="w3-center"><h1 class="w3-text-indigo">CHẾ ĐỘ BẢO HÀNH XE</h1></div>
+			<table class="w3-light-blue">
 				<tr>
 					<th>STT</th>
 					<th>Thuộc hệ thống</th>
@@ -147,207 +145,290 @@
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">1</td>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">Phần linh phụ kiện động cơ</td>
 					<td class="w3-padding">Bộ giải nhiệt khí nạp, thùng nhiên liệu lắp ráp, vỏ bộ lọc khí, bộ giảm thanh, bộ tản nhiệt, ruột gà, bộ lọc dầu diesel (lọc thô, không bao gồm lõi lọc)</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Thùng chứa giảm áp, nắp bảo vệ quạt gió, lót mềm động cơ, quạt</td>
-					<td class="w3-padding">12/80.000</td>
-					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/80.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
 				</tr>
 				<tr>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">2</td>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống bộ ly hợp</td>
 					<td class="w3-padding">Hệ thống dẫn động ly hợp</td>
-					<td class="w3-padding">12/50.000</td>
-					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/50.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Đĩa ly hợp (không bao gồm xói mòn, mài mòn)</td>
-					<td class="w3-padding">3/30.000</td>
-					<td class="w3-padding">2/15.000</td>
+					<td class="w3-padding w3-mytext-align-right">3/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">2/15.000</td>
 				</tr>
 				<tr>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">3</td>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">Hệ thống hộp số</td>
 					<td class="w3-padding">Vỏ hộp số, vỏ bộ ly hợp, nắp trên, nắp đỉnh, nắp bạc đạn</td>
-					<td class="w3-padding">36/100.000</td>
-					<td class="w3-padding">24/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">36/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">24/60.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Trục, bánh răng và đồng tốc</td>
-					<td class="w3-padding">12/60.000</td>
-					<td class="w3-padding">18/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Hệ thống dẫn động điều khiển hộp số</td>
-					<td class="w3-padding">12/50.000</td>
-					<td class="w3-padding">12/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/50.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/30.000</td>
 				</tr>
 				<tr>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">4</td>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống truyền động</td>
 					<td class="w3-padding">Ống trục các đăng, mặt bích</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">12/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Khớp các đăng truyền động (khớp chữ thập)</td>
-					<td class="w3-padding">12/40.000</td>
-					<td class="w3-padding">6/25.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/40.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/25.000</td>
 				</tr>
 				<tr>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">5</td>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">Hệ thống cầu truyền động</td>
 					<td class="w3-padding">Vỏ cầu truyền động, vỏ bộ vi sai, đế bạc đạn</td>
-					<td class="w3-padding">36/100.000</td>
-					<td class="w3-padding">24/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">36/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">24/60.000</td>
 				</tr>
 				<tr>
 					
 					<td class="w3-padding">Mặt bích, bánh răng truyền động, bộ giảm tốc bánh bên lắp ráp</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">12/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Vành xe và nan xe, bu lông bánh xe, mâm xe, tang trống</td>
-					<td class="w3-padding">9/40.000</td>
-					<td class="w3-padding">12/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/40.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">6</td>
 					<td class="w3-padding">Hệ thống chuyên dụng</td>
 					<td class="w3-padding">Đế kéo, tấm đỡ kéo</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">12/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/30.000</td>
 				</tr>
 				<tr>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">7</td>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống khung xe</td>
 					<td class="w3-padding">Khung xe lắp ráp</td>
-					<td class="w3-padding">36/10.000</td>
-					<td class="w3-padding">12/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">36/10.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/60.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Móc kéo trước và sau</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
 				</tr>
 				<tr>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">8</td>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">Hệ thống khung treo</td>
 					<td class="w3-padding">Khung treo cân bằng lắp ráp</td>
-					<td class="w3-padding">24/100.000</td>
-					<td class="w3-padding">9/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">24/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Hệ thống tren khí nén (không bao gồm bóng hơi cao su)</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">9/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Mõ nhíp, thanh cân bằng, nhíp chống số, nhíp lá, bu lông chữ U.</td>
-					<td class="w3-padding">12/60.000</td>
-					<td class="w3-padding">9/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/30.000</td>
 				</tr>
 				<tr>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">9</td>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">Cầu trước và hệ thống chuyển hướng</td>
 					<td class="w3-padding">Trục trước, tay lái trợ lực lắp ráp</td>
-					<td class="w3-padding">36/100.000</td>
-					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">36/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Hệ thống cơ khí dẫn động điều khiển lái (phần cơ khí)</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">9/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Trục lái, box lái</td>
-					<td class="w3-padding">12/60.000</td>
-					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">10</td>
 					<td class="w3-padding">Lốp xe</td>
 					<td class="w3-padding">Lốp xe</td>
-					<td class="w3-padding">6/30.000</td>
-					<td class="w3-padding">3/15.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">3/15.000</td>
 				</tr>
 				<tr>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">11</td>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống phanh</td>
 					<td class="w3-padding">Bình khí nén, hệ thống phanh (ngoài má phanh), phanh ống xả, bộ sấy và làm khô khí nén (APU), các loại van phanh, hệ thống ABS</td>
-					<td class="w3-padding">12/60.000</td>
-					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Má phanh (không bao gồm xói mòn, mài mòn)</td>
-					<td class="w3-padding">3/10.000</td>
-					<td class="w3-padding">2/10.000</td>
+					<td class="w3-padding w3-mytext-align-right">3/10.000</td>
+					<td class="w3-padding w3-mytext-align-right">2/10.000</td>
 				</tr>
 				<tr>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">12</td>
 					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống điện</td>
 					<td class="w3-padding">Van điện từ, bộ nâng cửa kính, bộ điều khiển khoảng cách gạt nước, công tắc, hệ thống dây điện, bảng đồng hồ, còi, bộ cảm biến, đèn (ngoài đèn chiếu sáng), hệ thống phát âm thanh, rơ le, khóa trung tâm</td>
-					<td class="w3-padding">12/40.000</td>
-					<td class="w3-padding">6/20.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/40.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/20.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Ắc quy</td>
-					<td class="w3-padding">6/60.000</td>
-					<td class="w3-padding">4/20.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">4/20.000</td>
 				</tr>
 				<tr>
 					<td rowspan="4" style="text-align: center; vertical-align: middle;">13</td>
 					<td rowspan="4" style="text-align: center; vertical-align: middle;">Hệ thống buồng lái</td>
 					<td class="w3-padding">Khung buồng lái, bản mạch buồng lái, đế đỡ hệ thống treo phía sau.</td>
-					<td class="w3-padding">36/10.000</td>
-					<td class="w3-padding">12/50.000</td>
+					<td class="w3-padding w3-mytext-align-right">36/10.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/50.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Bộ đổi hướng gió buồng lái</td>
-					<td class="w3-padding">24/10.000</td>
-					<td class="w3-padding">6/50.000</td>
+					<td class="w3-padding w3-mytext-align-right">24/10.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/50.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Bộ chống sốc thiết bị treo, lò xo thiết bị treo, ghế ngồi, giường nằm, kính chiếu hậu, lưới tản nhiệt, bảng điều khiển, dây cầu chì, bảng điều khiển buồng lái và linh kiện trang trí, bình xịt nước, trục mềm, bàn đạp ly hợp, bàn đạp phanh</td>
-					<td class="w3-padding">18/60.000</td>
-					<td class="w3-padding">9/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Bộ nâng lắp ráp, bơm nâng buồng lái, cơ cấu khóa, khóa thủy lực, bộ khóa an toàn đi kèm bộ nâng, kính</td>
-					<td class="w3-padding">12/40.000</td>
-					<td class="w3-padding">9/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/40.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">14</td>
 					<td class="w3-padding">Hệ thống điều hòa</td>
 					<td class="w3-padding">Lốc điều hòa, dàn nóng, dàn lạnh, van tiết lưu, bảng điều khiển, mô tơ</td>
-					<td class="w3-padding">6/20.000</td>
-					<td class="w3-padding">6/15.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/20.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/15.000</td>
 				</tr>
 				<tr>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">15</td>
 					<td rowspan="3" style="text-align: center; vertical-align: middle;">Bộ phận thông dụng</td>
 					<td class="w3-padding">Các loại ống (kim loại), đế nâng, khung nâng (linh kiện kim loại)</td>
-					<td class="w3-padding">18/100.000</td>
-					<td class="w3-padding">9/30.000</td>
+					<td class="w3-padding w3-mytext-align-right">18/100.000</td>
+					<td class="w3-padding w3-mytext-align-right">9/30.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Các loại ống (không phải kim loại), linh kiện vặn chặt, ống bọc ngoài</td>
-					<td class="w3-padding">12/60.000</td>
-					<td class="w3-padding">6/20.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/60.000</td>
+					<td class="w3-padding w3-mytext-align-right">6/20.000</td>
 				</tr>
 				<tr>
 					<td class="w3-padding">Tấm gạt nước, chế phẩm nhựa (đệm mềm, ống lót..v..v...), chế phẩm da (da, tấm trang trí và tấm chắn..v..v...)</td>
-					<td class="w3-padding">12/80.000</td>
-					<td >2/10.000</td>
+					<td class="w3-padding w3-mytext-align-right">12/80.000</td>
+					<td class="w3-padding w3-mytext-align-right"> 2/10.000</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 	<!-- END CHẾ ĐỘ BẢO HÀNH -->
+
+	<!-- ĐIỀU KHOẢN BẢO HÀNH XE -->
+	<div id="Dieukhoanbaohanhxe" class="w3-container itemTab" style="display: none;">
+		<div class="w3-center"><h1 class="w3-text-indigo">ĐIỀU KHOẢN BẢO HÀNH XE</h1></div>
+		<div class="w3-container w3-large w3-light-blue w3-padding">
+			<p>Kính chào quý khách !</p>
+			<p>Chúng tôi rất hoan nghênh quý khách đã sử dụng xe CHENGLONG – HẢI ÂU, hy vọng chiếc xe của chúng tôi sẽ mang lại nguồn lợi kinh tế và sự phát triển thịnh vượng của quý khách. Sản phẩm được thiết kế dựa trên kĩ thuật tiên tiến, sản phẩm có độ tin cậy cao, tuổi thọ sử dụng lâu dài , tính năng vượt trội phù hợp với mọi địa hình, mọi công việc như khai thác mỏ, san lấp mặt bằng, vận tải hàng hoá….tính kinh tế cao (chở nhiều, vượt dốc tốt, ít hao nhiên liệu đồng thời thân thiện với môi trường đạt tiêu chuẩn EURO III ).Theo định hướng phát triển của mình để đảm bảo quyền lợi và sự hài lòng cao nhất cho khách hàng. Mục tiêu của chúng tôi là: <b>“ Quan tâm đến bạn theo cách bạn mong muốn”</b></p>
+			<p>Đây chính là lý do sản phẩm mang thương hiệu CHENGLONG – HẢI ÂU đã và đang chiếm được niềm tin và sự lựa chọn của đa phần khách hàng tại Việt Nam. Để phát huy tốt hơn tính ưu việt của sản phẩm, đồng thời đảm bảo sự vận hành an toàn cho xe, mong quý khách đọc kỹ cuốn sách hướng dẫn sử dụng này trước khi đưa xe vào vận hành và đặc biệt chú ý đến <b>“Những điều cần cho xe vận hành an toàn”</b></p>
+			<ul>
+				<li class="w3-hover-indigo"><b>NHỮNG ĐIỀU KIỆN ĐƯỢC BẢO HÀNH</b></li>
+				<ol>
+					<li class="w3-hover-indigo">Tập đoàn Chenglong cùng Công ty TNHH Ô Tô Hải Âu chỉ bảo hành những hư hỏng do lỗi sản xuất của nhà sản xuất. Còn những lỗi do người sử dụng, hao mòn tự nhiên hãng không bảo hành.</li>
+					<li class="w3-hover-indigo">Khách hàng phải thực hiện đúng quy trình, quy phạm chạy xe, chủng loại dầu mỡ, thời gian thay dầu, các loại bầu lọc theo đúng quy định của nhà sản xuất.</li>
+					<li class="w3-hover-indigo">Hải Âu chỉ bảo hành cho những xe chở đúng tải, những phụ tùng, linh kiện thay thế của chính hãng.</li>
+					<li class="w3-hover-indigo">Hải Âu không chịu trách nhiệm đối với những hỏng hóc do việc chở quá tải hoặc phát hiện sự cố nhưng cố tình cho xe hoạt động không dừng lại để sửa chữa, khắc phục sự cố.</li>
+					<li class="w3-hover-indigo">Trong thời hạn bảo hành nếu đồng hồ báo Km bị hỏng thì tính theo cách: kể từ ngày bàn giao xe cho khách mỗi ngày xe chạy trên đường với xe tải ben hoặc tải thùng là 200km/ngày, với xe đầu kéo là 400km/ ngày.</li>
+					<li class="w3-hover-indigo">Để đảm bảo quyền lợi hợp pháp của khách hàng, yêu cầu khách hàng tự giác thực hiện theo hướng dẫn sử dụng của hãng trong thời gian bảo hành cũng như hết thời gian bảo hành để xe được hoạt động tốt nhất.</li>
+					<li class="w3-hover-indigo">Trong mọi trường hợp khi xe bị sự cố, hỏng hóc những danh mục đã nêu ở trên, đề nghị khách hàng báo cho bên kỹ thuật của Công Ty TNHH Ô Tô Hải Âu hoặc bên đại lý của công ty biết để có biện pháp khắc phục.</li>
+				</ol>
+				<hr>
+				<li class="w3-hover-indigo"><b>NHỮNG PHẦN KHÔNG ĐƯỢC BẢO HÀNH</b></li>
+				<ol>
+					<li class="w3-hover-indigo">Chủ phương tiện không kiểm tra, bảo dưỡng, chạy rà trước khi đưa vào sử dụng.</li>
+					<li class="w3-hover-indigo">Chủ phương tiện tự ý tháo hoặc sửa chữa chi tiết mà không báo cho nhà sản xuất.</li>
+					<li class="w3-hover-indigo">Xe chở quá trọng tải quy định, xe cơi thùng, độn nhíp, thay lốp to hơn theo quy định của cục đăng kiểm, các thao tác không đúng quy trình kỹ thuật tự điều chỉnh đồng hồ công tơ mét.</li>
+					<li class="w3-hover-indigo">Lái xe không có bằng lái theo quy định.</li>
+					<li class="w3-hover-indigo">Những hư hỏng do vô tình hay hữu ý với ý thức kém của người lái xe như chạy tốc độ nhanh ở địa hình xấu, lái ẩu hay đua xe…..</li>
+					<li class="w3-hover-indigo">Những hư hỏng do việc sửa chữa hay bảo dưỡng không phải do đại lý uỷ quyền Hải Âu thực hiện.</li>
+					<li class="w3-hover-indigo">Những hao mòn tự nhiên như : Phai màu tự nhiên của các bề mặt sơn, mạ, bọc, đệm , săm lốp ...</li>
+					<li class="w3-hover-indigo">Những hiện tượng thẩm mỹ không ảnh hưởng tới chất lượng và sự hoạt động của xe như: Tiếng ồn, những rung động nhỏ, vết dầu loang...</li>
+					<li class="w3-hover-indigo">Hao mòn của phụ tùng: Những hao mòn tự nhiên của phụ tùng và các chi tiết</li>
+					<li class="w3-hover-indigo">Những phụ tùng dưới đây xem như không nằm trong bảo hành:</li>
+					<ul>
+						<li class="w3-hover-indigo">Các loại lọc, má phanh, guốc phanh, đĩa ly hợp, các loaị đèn, các cầu trì, các chổi than, gạt nước, dây curoa, các chi tiết bằng cao su, các loại dầu mỡ, nước làm mát, nước ắc quy.</li>
+						<li class="w3-hover-indigo">Bất kỳ sự thiệt hại theo thiên tai, cháy, đâm xe, mất trộm và nguyên nhân trên gây ra.</li>
+						<li class="w3-hover-indigo">Những hư hỏng do muội, khói, hoá chất, nước bẩn, hơi nước mặn, muối loang, các nguyên nhân tự nhiên khác.</li>
+					</ul>
+				</ol>
+			</ul>
+		</div>
+	</div>
+	<!-- END ĐIỀU KHOẢN BẢO HÀNH XE -->
+
+	<!-- HỆ THỐNG DỊCH VỤ -->
+	<div id="Hethongdichvu" class="w3-container w3-margin-top itemTab" style="display: none;">
+		<div class="w3-center"><h1 class="w3-text-indigo">HỆ THỐNG DỊCH VỤ</h1></div>
+		<div class="w3-container w3-light-blue w3-large w3-padding">
+			<ul>
+				<li class="w3-hover-indigo"><b>Đến với chúng tôi quý khách sẽ được:</b></li>
+				<ol>
+					<li class="w3-hover-indigo">Đăng ký lái thử xe miễn phí</li>
+					<li class="w3-hover-indigo">Tư vấn thủ tục mua, bán, đăng ký, đăng kiểm, sang tên xe... nhiệt tình chu đáo</li>
+					<li class="w3-hover-indigo">Chất lượng xe bền, đẹp, tiết kiệm nhiên liệu...mang lại hiệu quả kinh tế cao.</li>
+					<li class="w3-hover-indigo">Đổi xe cũ - Lấy xe mới.</li>
+					<li class="w3-hover-indigo">Hỗ trợ vay ngân hàng.</li>
+					<li class="w3-hover-indigo">Giá rẻ nhất.</li>
+					<li class="w3-hover-indigo">Chất lượng dịch vụ tốt nhất.</li>
+					<li class="w3-hover-indigo">Bảo hành theo chế độ xe chính hãng.</li>
+					<li class="w3-hover-indigo">Minh bạch về nguồn gốc xuất xứ cũng như giá xe mà chúng tôi cung cấp.</li>
+					<li class="w3-hover-indigo">Sản phẩm được bảo hành và bảo trì theo đúng tiêu chuẩn của nhà sản xuất.</li>
+					<li class="w3-hover-indigo">Cùng với những tiêu chí đảm bảo cho khách hàng, luôn sẵn sàng cung cấp các dịch vụ tốt nhất khi khách hàng cần.</li>
+					<li class="w3-hover-indigo">Dịch vụ cung cấp và nhập khẩu ủy thác các dòng xe ô tô được phép nhập khẩu về Việt Nam.</li>
+					<li class="w3-hover-indigo">Có nhiều chương trình khuyến mại và được tặng quà có giá trị.</li>
+				</ol>
+				
+				<b>Vậy nếu bạn và gia đình đã có ý tưởng sở hữu 1 chiếc ô tô để mang lại hiệu quả kinh tế cho gia đình thì hãy liên hệ ngay với chúng tôi để được hỗ trợ, tư vấn tốt nhất các dòng xe Hải Âu - Chenglong. Hải Âu - Chenglong hân hạnh mang đến cho quý vị sự hài lòng và tình cảm trân thành nhất!
+				Đặc biệt, đến với Hải Âu - Chenglong, bạn sẽ được hỗ trợ: Giá tốt, Nhiều quà tặng khuyến mãi có giá trị, thời gian giao xe nhanh chóng, hỗ trợ giao xe, đăng ký các thủ tục liên quan tận nơi.</b>
+				<hr>
+				<li class="w3-hover-indigo"><b>Vậy khách hàng mua xe tải Chenglong sẽ nhận được những gì?:</b></li>
+				<ol>
+					<li class="w3-hover-indigo">Xe nhập khẩu trực tiếp chính hãng, đời mới nhất.</li>
+					<li class="w3-hover-indigo">Giá cả cạnh tranh, thủ tục mua bán nhanh chóng, đơn giản, thuận tiện.</li>
+					<li class="w3-hover-indigo">Hỗ trợ vay trả góp 70% giá trị xe với lãi suất ưu đãi và thời gian 3 ngày kể từ lúc cung cấp đủ hồ sơ.</li>
+					<li class="w3-hover-indigo">Đăng ký, đăng kiểm, khám lưu hành, cà số khung - số máy, gắn biển số.. hoàn thiện các thủ tục trọn gói "chìa khóa trao tay".</li>
+					<li class="w3-hover-indigo">Cung cấp phụ tùng thay thế chính hiệu trong thời gian nhanh nhất kể từ khi đặt hàng.</li>
+					<li class="w3-hover-indigo">Phương Thức Thanh Toán đa năng - linh động.</li>
+					<li class="w3-hover-indigo">Hiện tại, Hải Âu – Chenglong có 50 trạm dịch vụ sửa chữa và cung ứng phụ tùng toàn quốc, cùng đội ngũ xe cứu hộ lưu động 24/24</li>
+				</ol>
+				
+			</ul>
+		</div>
+	</div>
+	<!-- END HỆ THỐNG DỊCH VỤ -->
 
 	<!-- Foolter -->
 	<div class="w3-container w3-indigo w3-center w3-padding-24">All rights reserved ©2021<br>CÔNG TY TNHH Ô TÔ HẢI ÂU <br>Chi nhánh Miền Tây<br> Website: <a href="http://thegioichenglong.com">http://thegioichenglong.com</a>

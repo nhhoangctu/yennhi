@@ -46,6 +46,23 @@ function openCategory(event, category){
 	event.currentTarget.className += " w3-red";
 }
 
+
+function activeTab(event, itemTab){
+	var i, categories, tablinks;
+	categories = document.getElementsByClassName("itemTab");
+	for (var i = 0; i < categories.length; i++) {
+		categories[i].style.display = 'none';
+	}
+
+	tablinks = document.getElementsByClassName("groupTab");
+	for (var i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+	}
+
+	document.getElementById(itemTab).style.display = 'block';
+	event.currentTarget.className += " w3-red";
+}
+
 function showModal(argument) {
 	var idModal = document.getElementById(argument);
 	idModal.style.display = "block";
