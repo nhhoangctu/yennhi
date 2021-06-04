@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- SEO meta tags -->
+	<meta charset="UTF-8">
+<!-- 	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe"> -->
+
+	<meta name="keywords" content="thegioichenglong.com, Mua xe Chenglong, chenglong H7, Chenglong Can tho, xe dau keo chenglong, xe tai chenglong, xe ben chenglong, chenglong mien" />
+	<meta name="description" content="CÔNG TY TNHH Ô TÔ HẢI ÂU. Chi nhánh Miền Tây" />
+	<meta name="author" content="CÔNG TY TNHH Ô TÔ HẢI ÂU" />
+	<meta name="Robots" content="INDEX, FOLLOW ,all" />
+	<meta name="googlebot" content="INDEX,FOLLOW" />
+	<meta property="og:locale" content="vi_vn">
+	<!-- End SEO meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="shortcut icon" href="img/logohaihau-title.png">
+	<title>THEGIOICHENGLONG.COM</title>
+	<style type="text/css">	
+		html {
+			scroll-behavior: smooth;
+		}
+		table, tr, th, td{
+			border: 1px solid black;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+	</style>	
+</head>
+<body class="w3-serif">
+	<!--  -->
+	
+	<div class="w3-bottom" style="width: 100%">
+		<a href="#top" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Về đầu trang</a>
+		<a href="#sanpham" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Menu sản phẩm</a>
+	</div>
+	
+	<!-- Nav bar -->
+	<div class="w3-indigo w3-card w3-large w3-center">
+		<div class="w3-bar">
+			<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="img/logo/logo.png" alt=""></a> -->
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
+			<div class="w3-dropdown-hover w3-mobile ">
+				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
+				<!-- <div class="w3-dropdown-content w3-bar-block">
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+				</div> -->
+			</div>
+			<a href="#Huongdanmuahang" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Huongdanmuahang')">HƯỚNG DẪN MUA HÀNG</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">DỊCH VỤ</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">PHỤ TÙNG</a>
+			<a href="#news" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TIN TỨC</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">LIÊN HỆ</a>
+<!-- 				<div class="w3-hide-medium">
+					<input type="text" class="w3-bar-item w3-button w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" style="width: 150px" placeholder="Search..">
+					<button class="w3-bar-item w3-button w3-green w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">Go</button>
+				</div> -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" onclick="showBarItems()">&#9776;</a>
+			</div>
+
+
+			<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="barItems">
+				<a href="" class="w3-bar-item w3-button">TRANG CHỦ</a>
+				<a href="" class="w3-bar-item w3-button">GIỚI THIỆU</a>
+				<div class="w3-mobile ">
+					<!-- <button class="w3-button w3-hover-yellow w3-padding" onclick="showProducts()">SẢN PHẨM <i class="fa fa-caret-down"></i></button> -->
+					<a href="#sanpham" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow" >SẢN PHẨM <i class="fa fa-caret-down"></i></a>
+					<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="products">
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+					</div>
+				</div>
+				<a href="#news" class="w3-bar-item w3-button">TIN TỨC</a>
+				<a href="" class="w3-bar-item w3-button">KHUYẾN MÃI</a>
+				<a href="" class="w3-bar-item w3-button">PHỤ TÙNG</a>
+				<a href="#contact" class="w3-bar-item w3-button">LIÊN HỆ</a>
+			</div>
+		</div>
+		<!-- END Nav bar  -->
+
+
+		<!-- Logo and contact -->
+		<div class="w3-container w3-border-bottom w3-border-indigo w3-padding w3-light-grey">
+			<div class="w3-row">
+				<div class="w3-quarter w3-light-grey w3-padding w3-center w3-margin-top">
+					<img src="img/logo/logohaihau.png" alt="Logo Hải Âu" style="width: 55%" id="hiddenLogo">
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium ">
+					<i class="fa fa-phone w3-green w3-large w3-padding w3-round w3-margin-bottom"> </i><a href="tel:0933610331" style="text-decoration: none"><span class="w3-text-red"><b> 0933 610 331</b></span> - <a href="tel:0931516154" style="text-decoration: none"><span class="w3-text-red"><b> 0931 516 154</b></span></a><span class="w3-text-red"><b> (Ms Nhi)</b></span>
+					<i class="fa fa-envelope w3-khaki w3-large w3-padding w3-round"> </i><a href="mailto: ttyenhi92@gmail.com" style="text-decoration: none"><span class="w3-text-red"><b> ttyenhi92@gmail.com</b></span></a><br>
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium">
+					<a href="https://www.facebook.com/buon.vui.3192" style="text-decoration: none"><i class="fa fa-facebook w3-indigo w3-large w3-padding w3-round w3-margin-bottom"></i> <b> Facebook</b></a><br>
+					<a href="https://www.youtube.com/results?search_query=xe+cheng+long" style="text-decoration: none;"><i class="fa fa-youtube w3-red w3-large w3-padding w3-round"></i><b> Youtube</b></a> <br>
+
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-hide-small w3-hide-medium">
+					<img src="img/logo/chenglong-nobg.png" alt="Logo ChengLong" style="width: 80%; height: 83px">
+				</div>
+			</div>
+		</div>
+		<!-- END Logo and contact -->
+
+		<!-- Slideshow -->
+		<div class="w3-border">
+			<img class="mySlides" src="img\slide-show\xe-dau-keo-chenglong-hai-au-2222.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
+			<img class="mySlides" src="img\slide-show\slide1-01-01-01.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
+			<img class="mySlides" src="img\slide-show\slide-1-1-1550x550.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
+		</div>
+		<!--  END Slideshow-->
+
+
+		<div class="w3-center">
+			<div class="w3-bar">
+				<button class="w3-bar-item w3-button w3-padding"><span class="w3-green w3-text-white w3-round w3-padding fa fa-wrench fa-4x"></span><br><b>CHẾ ĐỘ BẢO HÀNH XE</b></button>
+				<button class="w3-bar-item w3-button w3-padding"><span class="w3-green w3-text-white w3-round w3-padding fa fa-pencil-square-o fa-4x"></span><br><b>ĐIỀU KHOẢN BẢO HÀNH</b></button>
+				<button class="w3-bar-item w3-button w3-padding"><span class="w3-green w3-text-white w3-round w3-padding fa fa-user fa-4x"></span><br><b>HỆ THỐNG DỊCH VỤ</b></button>
+			</div>
+		</div>
+		<!-- CHẾ ĐỘ BẢO HÀNH -->
+		<div class="w3-container w3-padding w3-hoverable w3-large">
+			<table>
+				<tr>
+					<th>STT</th>
+					<th>Thuộc hệ thống</th>
+					<th>Tên linh phụ kiện</th>
+					<th>Cabin M7(Km)</th>
+					<th>Cabin M5(Km)</th>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">1</td>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">Phần linh phụ kiện động cơ</td>
+					<td class="w3-padding">Bộ giải nhiệt khí nạp, thùng nhiên liệu lắp ráp, vỏ bộ lọc khí, bộ giảm thanh, bộ tản nhiệt, ruột gà, bộ lọc dầu diesel (lọc thô, không bao gồm lõi lọc)</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">6/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Thùng chứa giảm áp, nắp bảo vệ quạt gió, lót mềm động cơ, quạt</td>
+					<td class="w3-padding">12/80.000</td>
+					<td class="w3-padding">6/30.000</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">2</td>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống bộ ly hợp</td>
+					<td class="w3-padding">Hệ thống dẫn động ly hợp</td>
+					<td class="w3-padding">12/50.000</td>
+					<td class="w3-padding">6/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Đĩa ly hợp (không bao gồm xói mòn, mài mòn)</td>
+					<td class="w3-padding">3/30.000</td>
+					<td class="w3-padding">2/15.000</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">3</td>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">Hệ thống hộp số</td>
+					<td class="w3-padding">Vỏ hộp số, vỏ bộ ly hợp, nắp trên, nắp đỉnh, nắp bạc đạn</td>
+					<td class="w3-padding">36/100.000</td>
+					<td class="w3-padding">24/60.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Trục, bánh răng và đồng tốc</td>
+					<td class="w3-padding">12/60.000</td>
+					<td class="w3-padding">18/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Hệ thống dẫn động điều khiển hộp số</td>
+					<td class="w3-padding">12/50.000</td>
+					<td class="w3-padding">12/30.000</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">4</td>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống truyền động</td>
+					<td class="w3-padding">Ống trục các đăng, mặt bích</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">12/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Khớp các đăng truyền động (khớp chữ thập)</td>
+					<td class="w3-padding">12/40.000</td>
+					<td class="w3-padding">6/25.000</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">5</td>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">Hệ thống cầu truyền động</td>
+					<td class="w3-padding">Vỏ cầu truyền động, vỏ bộ vi sai, đế bạc đạn</td>
+					<td class="w3-padding">36/100.000</td>
+					<td class="w3-padding">24/60.000</td>
+				</tr>
+				<tr>
+					
+					<td class="w3-padding">Mặt bích, bánh răng truyền động, bộ giảm tốc bánh bên lắp ráp</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">12/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Vành xe và nan xe, bu lông bánh xe, mâm xe, tang trống</td>
+					<td class="w3-padding">9/40.000</td>
+					<td class="w3-padding">12/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">6</td>
+					<td class="w3-padding">Hệ thống chuyên dụng</td>
+					<td class="w3-padding">Đế kéo, tấm đỡ kéo</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">12/30.000</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">7</td>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống khung xe</td>
+					<td class="w3-padding">Khung xe lắp ráp</td>
+					<td class="w3-padding">36/10.000</td>
+					<td class="w3-padding">12/60.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Móc kéo trước và sau</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">6/30.000</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">8</td>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">Hệ thống khung treo</td>
+					<td class="w3-padding">Khung treo cân bằng lắp ráp</td>
+					<td class="w3-padding">24/100.000</td>
+					<td class="w3-padding">9/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Hệ thống tren khí nén (không bao gồm bóng hơi cao su)</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">9/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Mõ nhíp, thanh cân bằng, nhíp chống số, nhíp lá, bu lông chữ U.</td>
+					<td class="w3-padding">12/60.000</td>
+					<td class="w3-padding">9/30.000</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">9</td>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">Cầu trước và hệ thống chuyển hướng</td>
+					<td class="w3-padding">Trục trước, tay lái trợ lực lắp ráp</td>
+					<td class="w3-padding">36/100.000</td>
+					<td class="w3-padding">6/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Hệ thống cơ khí dẫn động điều khiển lái (phần cơ khí)</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">9/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Trục lái, box lái</td>
+					<td class="w3-padding">12/60.000</td>
+					<td class="w3-padding">6/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">10</td>
+					<td class="w3-padding">Lốp xe</td>
+					<td class="w3-padding">Lốp xe</td>
+					<td class="w3-padding">6/30.000</td>
+					<td class="w3-padding">3/15.000</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">11</td>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống phanh</td>
+					<td class="w3-padding">Bình khí nén, hệ thống phanh (ngoài má phanh), phanh ống xả, bộ sấy và làm khô khí nén (APU), các loại van phanh, hệ thống ABS</td>
+					<td class="w3-padding">12/60.000</td>
+					<td class="w3-padding">6/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Má phanh (không bao gồm xói mòn, mài mòn)</td>
+					<td class="w3-padding">3/10.000</td>
+					<td class="w3-padding">2/10.000</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">12</td>
+					<td rowspan="2" style="text-align: center; vertical-align: middle;">Hệ thống điện</td>
+					<td class="w3-padding">Van điện từ, bộ nâng cửa kính, bộ điều khiển khoảng cách gạt nước, công tắc, hệ thống dây điện, bảng đồng hồ, còi, bộ cảm biến, đèn (ngoài đèn chiếu sáng), hệ thống phát âm thanh, rơ le, khóa trung tâm</td>
+					<td class="w3-padding">12/40.000</td>
+					<td class="w3-padding">6/20.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Ắc quy</td>
+					<td class="w3-padding">6/60.000</td>
+					<td class="w3-padding">4/20.000</td>
+				</tr>
+				<tr>
+					<td rowspan="4" style="text-align: center; vertical-align: middle;">13</td>
+					<td rowspan="4" style="text-align: center; vertical-align: middle;">Hệ thống buồng lái</td>
+					<td class="w3-padding">Khung buồng lái, bản mạch buồng lái, đế đỡ hệ thống treo phía sau.</td>
+					<td class="w3-padding">36/10.000</td>
+					<td class="w3-padding">12/50.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Bộ đổi hướng gió buồng lái</td>
+					<td class="w3-padding">24/10.000</td>
+					<td class="w3-padding">6/50.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Bộ chống sốc thiết bị treo, lò xo thiết bị treo, ghế ngồi, giường nằm, kính chiếu hậu, lưới tản nhiệt, bảng điều khiển, dây cầu chì, bảng điều khiển buồng lái và linh kiện trang trí, bình xịt nước, trục mềm, bàn đạp ly hợp, bàn đạp phanh</td>
+					<td class="w3-padding">18/60.000</td>
+					<td class="w3-padding">9/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Bộ nâng lắp ráp, bơm nâng buồng lái, cơ cấu khóa, khóa thủy lực, bộ khóa an toàn đi kèm bộ nâng, kính</td>
+					<td class="w3-padding">12/40.000</td>
+					<td class="w3-padding">9/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">14</td>
+					<td class="w3-padding">Hệ thống điều hòa</td>
+					<td class="w3-padding">Lốc điều hòa, dàn nóng, dàn lạnh, van tiết lưu, bảng điều khiển, mô tơ</td>
+					<td class="w3-padding">6/20.000</td>
+					<td class="w3-padding">6/15.000</td>
+				</tr>
+				<tr>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">15</td>
+					<td rowspan="3" style="text-align: center; vertical-align: middle;">Bộ phận thông dụng</td>
+					<td class="w3-padding">Các loại ống (kim loại), đế nâng, khung nâng (linh kiện kim loại)</td>
+					<td class="w3-padding">18/100.000</td>
+					<td class="w3-padding">9/30.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Các loại ống (không phải kim loại), linh kiện vặn chặt, ống bọc ngoài</td>
+					<td class="w3-padding">12/60.000</td>
+					<td class="w3-padding">6/20.000</td>
+				</tr>
+				<tr>
+					<td class="w3-padding">Tấm gạt nước, chế phẩm nhựa (đệm mềm, ống lót..v..v...), chế phẩm da (da, tấm trang trí và tấm chắn..v..v...)</td>
+					<td class="w3-padding">12/80.000</td>
+					<td >2/10.000</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- END CHẾ ĐỘ BẢO HÀNH -->
+
+	<!-- Foolter -->
+	<div class="w3-container w3-indigo w3-center w3-padding-24">All rights reserved ©2021<br>CÔNG TY TNHH Ô TÔ HẢI ÂU <br>Chi nhánh Miền Tây<br> Website: <a href="http://thegioichenglong.com">http://thegioichenglong.com</a>
+	</div>
+	<!-- Foolter -->
+</body>
+<script src="js/myjs.js"></script>
+</html>
