@@ -28,8 +28,8 @@
 		.navButton{
 			position: fixed;
 			right: 0;
-			bottom: 30%;
-			width: 6%;
+			bottom: 100px;
+			width: 80px;
 			z-index: 1;
 			color: red;
 			padding: 2px;
@@ -40,18 +40,20 @@
 </head>
 <body class="w3-serif">
 	<!-- Nav button -->
-	<<!-- div class="w3-bottom" style="width: 100%">
+	<!-- div class="w3-bottom" style="width: 100%">
 		<a href="#top" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Về đầu trang</a>
 		<a href="#sanpham" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Menu sản phẩm</a>
 	</div> -->
 
 	<div class="navButton">
 		<div class="w3-bar-block">
-			<a href="#sanpham" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-truck fa-2x w3-padding w3-round w3-yellow"></i></a>			
-			<a href="tel:0933 610 331" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-phone fa-2x w3-padding w3-round w3-green"></i></a>			
-			<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-facebook-square fa-2x w3-padding w3-round w3-indigo"></i></a>			
-			<a href="https://www.youtube.com/results?search_query=xe+cheng+long" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-youtube fa-2x w3-padding w3-round w3-red"></i></a>			
-			<a href="#top" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-home fa-2x w3-padding w3-round w3-blue"></i></a>			
+			<a href="#sanpham" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-truck w3-round w3-padding w3-yellow"></i></a>			
+			<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-messenger.png" alt="" style="width: 110%; height: 100%;" class="w3-padding w3-round w3-blue"></a>	
+			<a href="https://zalo.me/0975193219" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-zalo-chat-white.png" alt="" style="width: 110%; height: 100%" class="w3-padding w3-blue w3-round"></a>			
+			<a href="tel:0933 610 331" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-phone w3-round w3-padding w3-green"></i></a>			
+			<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-facebook-square w3-round w3-padding w3-indigo"></i></a>			
+			<a href="https://www.youtube.com/results?search_query=xe+cheng+long" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-youtube w3-round w3-padding w3-red"></i></a>			
+			<a href="#top" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-home w3-round w3-padding w3-blue"></i></a>			
 		</div>
 	</div>
 	<!-- End Nav button -->
@@ -143,7 +145,7 @@
 
 		<!-- Refer sản phẩm-->
 		<div class="w3-center w3-indigo" id="sanpham">
-			<h2 class="w3-center w3-text-white">Sản phẩm xe của Thế giới ChengLong</h2>
+			<h2 class="w3-center w3-text-white"><b>SẢN PHẨM XE CỦA THẾ GIỚI CHENG LONG</b></h2>
 			<div class="w3-indigo w3-large w3-bar w3-border-top">
 				<a href="#xetaithung" class="w3-bar-item w3-button w3-padding tablink w3-red" onclick="openCategory(event, 'xetaithung')">Xe Tải thùng</a>
 				<a href="#xedaukeo" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'xedaukeo')">Xe Đầu kéo</a>
@@ -157,7 +159,7 @@
 		<!-- Xe tải thùng -->
 		<div class="w3-padding-32 w3-light-grey category">
 			<div id="xetaithung" class="w3-container w3-text-indigo w3-border-top" style="width:100%">
-				<h3>XE TẢI THÙNG</h3>
+				<h3><b>XE TẢI THÙNG</b></h3>
 			</div>
 			<div class="w3-row-padding">
 				<div class="w3-quarter w3-light-grey w3-display-container w3-margin-bottom">
@@ -219,7 +221,7 @@
 		<!-- Xe đầu kéo -->
 		<div class="w3-padding-32 w3-light-grey category">
 			<div class="w3-container w3-text-indigo w3-border-top" style="width:100%">
-				<h3 id="xedaukeo" >XE ĐẦU KÉO</h3>
+				<h3 id="xedaukeo"><b>XE ĐẦU KÉO</b></h3>
 			</div>
 			<div class="w3-row-padding">
 				<div class="w3-quarter w3-light-grey w3-display-container w3-margin-bottom">
@@ -280,7 +282,7 @@
 		<!-- Xe ben -->
 		<div class="w3-padding-32 w3-light-grey category">
 			<div class="w3-container w3-text-indigo w3-border-top" style="width:100%">
-				<h3 id="xeben">XE BEN</h3>
+				<h3 id="xeben"><b>XE BEN</b></h3>
 			</div>
 			<div class="w3-row-padding">
 				<div class="w3-quarter w3-light-grey w3-display-container w3-margin-bottom">
@@ -317,7 +319,7 @@
 		<!-- Xe bồn -->
 		<div class="w3-padding-32 w3-light-grey category">
 			<div class="w3-container w3-text-indigo w3-border-top" style="width:100%">
-				<h3 id="xebon">XE BỒN</h3>
+				<h3 id="xebon"><b>XE BỒN</b></h3>
 			</div>
 			<div class="w3-row-padding">
 				<div class="w3-quarter w3-light-grey w3-display-container w3-margin-bottom">
@@ -341,7 +343,7 @@
 		<!-- Xe Sơ mi rơ mooc -->
 		<div class="w3-padding-32 w3-light-grey category">
 			<div class="w3-container w3-text-indigo w3-border-top" style="width:100%">
-				<h3 id="somiromooc">SƠ MI RƠ MOÓC</h3>
+				<h3 id="somiromooc"><b>SƠ MI RƠ MOÓC</b></h3>
 			</div>
 			<div class="w3-row-padding">
 				<div class="w3-quarter w3-light-grey w3-display-container w3-margin-bottom">
@@ -811,7 +813,7 @@
 		<!-- ABOUT AND VIDEO -->
 		<div class="w3-row">
 			<div class="w3-half w3-margin-top">
-				<iframe style="width: 100%" height="996" src="https://www.youtube.com/embed/0ks9e5_T868" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe style="width: 100%" height="997" src="https://www.youtube.com/embed/0ks9e5_T868" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class="w3-half w3-margin-top w3-container w3-khaki" style="text-align: justify;">
 				<h3 class="w3-center w3-text-red">VỀ CHÚNG TÔI</h3>
@@ -901,8 +903,8 @@
 		<!-- END ABOUT AND VIDEO -->
 
 		<!-- TIN TUC -->
-		<div class="w3-container">
-			<h2 class="w3-center w3-text-white w3-indigo" id="news">TIN TỨC NỔI BẬT</h2>
+		<div class="w3-container w3-border-top">
+			<h2 class="w3-center w3-text-indigo" id="news"><b>TIN TỨC NỔI BẬT</b></h2>
 			<div class="w3-row-padding">
 				<div class="w3-quarter">
 					<img src="img/news/DSC02515.jpg" alt="" style="width: 100%; height: 300px">
