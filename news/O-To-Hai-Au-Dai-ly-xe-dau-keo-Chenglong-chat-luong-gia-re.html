@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- SEO meta tags -->
+	<meta charset="UTF-8">
+<!-- 	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe"> -->
+
+	<meta name="keywords" content="thegioichenglong.com, Mua xe Chenglong, chenglong H7, Chenglong Can tho, xe dau keo chenglong, xe tai chenglong, xe ben chenglong, chenglong mien" />
+	<meta name="description" content="CÔNG TY TNHH Ô TÔ HẢI ÂU. Chi nhánh Miền Tây" />
+	<meta name="author" content="CÔNG TY TNHH Ô TÔ HẢI ÂU" />
+	<meta name="Robots" content="INDEX, FOLLOW ,all" />
+	<meta name="googlebot" content="INDEX,FOLLOW" />
+	<meta property="og:locale" content="vi_vn">
+	<!-- End SEO meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="shortcut icon" href="../img/logohaihau-title.png">
+	<title>THEGIOICHENGLONG.COM</title>
+	<style type="text/css">	
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>	
+</head>
+<body class="w3-serif">
+	
+	
+	<!-- Nav bar -->
+	<div class="w3-indigo w3-card w3-large w3-center">
+		<div class="w3-bar">
+			<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="../img/logo/logo.png" alt=""></a> -->
+			<a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
+			<div class="w3-dropdown-hover w3-mobile ">
+				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
+				<!-- <div class="w3-dropdown-content w3-bar-block">
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+				</div> -->
+			</div>
+			<a href="#Huongdanmuahang" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Huongdanmuahang')">HƯỚNG DẪN MUA HÀNG</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">DỊCH VỤ</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">PHỤ TÙNG</a>
+			<a href="#news" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TIN TỨC</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">LIÊN HỆ</a>
+<!-- 				<div class="w3-hide-medium">
+					<input type="text" class="w3-bar-item w3-button w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" style="width: 150px" placeholder="Search..">
+					<button class="w3-bar-item w3-button w3-green w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">Go</button>
+				</div> -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" onclick="showBarItems()">&#9776;</a>
+			</div>
+
+
+			<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="barItems">
+				<a href="../index.html" class="w3-bar-item w3-button">TRANG CHỦ</a>
+				<a href="" class="w3-bar-item w3-button">GIỚI THIỆU</a>
+				<div class="w3-mobile ">
+					<!-- <button class="w3-button w3-hover-yellow w3-padding" onclick="showProducts()">SẢN PHẨM <i class="fa fa-caret-down"></i></button> -->
+					<a href="#sanpham" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow" >SẢN PHẨM <i class="fa fa-caret-down"></i></a>
+					<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="products">
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+					</div>
+				</div>
+				<a href="#news" class="w3-bar-item w3-button">TIN TỨC</a>
+				<a href="" class="w3-bar-item w3-button">KHUYẾN MÃI</a>
+				<a href="" class="w3-bar-item w3-button">PHỤ TÙNG</a>
+				<a href="index.html#contact" class="w3-bar-item w3-button">LIÊN HỆ</a>
+			</div>
+		</div>
+		<!-- END Nav bar  -->
+
+
+		<!-- Logo and contact -->
+		<div class="w3-container w3-border-bottom w3-border-indigo w3-padding w3-light-grey">
+			<div class="w3-row">
+				<div class="w3-quarter w3-light-grey w3-padding w3-center w3-margin-top">
+					<img src="../img/logo/logohaihau.png" alt="Logo Hải Âu" style="width: 55%" id="hiddenLogo">
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium ">
+					<i class="fa fa-phone w3-green w3-large w3-padding w3-round w3-margin-bottom"> </i><a href="tel:0933610331" style="text-decoration: none"><span class="w3-text-red"><b> 0933 610 331</b></span> - <a href="tel:0931516154" style="text-decoration: none"><span class="w3-text-red"><b> 0931 516 154</b></span></a><span class="w3-text-red"><b> (Ms Nhi)</b></span>
+					<i class="fa fa-envelope w3-khaki w3-large w3-padding w3-round"> </i><a href="mailto: ttyenhi92@gmail.com" style="text-decoration: none"><span class="w3-text-red"><b> ttyenhi92@gmail.com</b></span></a><br>
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium">
+					<a href="https://www.facebook.com/buon.vui.3192" style="text-decoration: none"><i class="fa fa-facebook w3-indigo w3-large w3-padding w3-round w3-margin-bottom"></i> <b> Facebook</b></a><br>
+					<a href="https://www.youtube.com/results?search_query=xe+cheng+long" style="text-decoration: none;"><i class="fa fa-youtube w3-red w3-large w3-padding w3-round"></i><b> Youtube</b></a> <br>
+
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-hide-small w3-hide-medium">
+					<img src="../img/logo/chenglong-nobg.png" alt="Logo ChengLong" style="width: 80%; height: 83px">
+				</div>
+			</div>
+		</div>
+		<!-- END Logo and contact -->
+
+		<!-- Slideshow -->
+		<div class="w3-border">
+			<img class="mySlides" src="../img/slide-show/slide1-01-01-01.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
+		</div>
+		<!--  END Slideshow-->
+
+
+		<!-- NEWS CONTENT -->
+		<div class="w3-container w3-light-blue w3-content w3-large" style="max-width:1200px; text-align: justify;">
+			<h2 class="w3-center">Ô Tô Hải Âu - Đại lý xe đầu kéo Chenglong chất lượng, giá rẻ</h2>
+			<p>Xe đầu kéo hay xe tải đầu kéo và ô tô đầu kéo là loại phương tiện cơ giới vận chuyển đường bộ có thể vận chuyển nhiều hàng hóa. Xe đầu kéo chở được những vật cồng kềnh và trọng lượng lớn như container thông qua những rơ moóc và thùng xe nối kèm. Vậy đại lý xe đầu kéo uy tín ở đâu?</p>
+			<img src="../img/news/008/1.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><b>Xe sơ mi rơ moóc là gì? Đại lý xe đầu kéo ở đâu uy tín?</b></h6>
+			<p>Đó là loại phương tiện giao thông đường bộ không có động cơ và có kết cấu và trang bị dùng để chở người hoặc hàng hóa, loại xe này được kéo bởi một xe đầu kéo. Trong một số tiêu chuẩn khác, Rơ Mooc và sơ mi rơ moóc còn được gọi là “mooc và bán mooc”.</p>
+			Cũng giống như các dòng xe khác, xe sơ mi rơ moóc cũng có những ưu điểm như sau:
+			<ul>
+				<li>Thùng chứa loại khủng và được gia cố bởi loại thép không gỉ, bền chắc lại có thể chịu áp lực lớn nên được dùng chuyên chở các mặt hàng lớn mà không bị lo quá tải.</li>
+				<li>Hạn chế khả năng chịu tải và kích thước của các dòng xe tải hiện nay.</li>
+				<li>Có hệ thống tự nâng hiện đại giúp việc bốc dỡ trở nên nhàn hơn lại giúp tiết kiệm việc thuê nhân công bốc hàng, nếu xe đi kèm với thùng chứa có dung tích lớn.</li>
+				<li>Phục vụ liên tiếp trong ngày mà không cần bảo dưỡng quá nhiều.</li>
+				<li>Lốp xe chắc chắn không sợ bị hỏng vì tải trọng lớn.</li>
+			</ul>
+			<img src="../img/news/008/2.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><b>Xe đầu kéo là gì? Đại lý xe đầu kéo chất lượng ở đâu?</b></h6>
+			<p><b>Xe đầu kéo</b> là những loại xe tải có khả năng kéo và chở rất lớn và có công suất đến 3.000 mã lực và sức chở đến 400 tấn. … Đầu kéo thường kéo theo rơ moóc nên được gọi là đầu kéo rơ moóc.</p>
+			<p>Ô Tô Hải Âu chính là đại lý <b>xe đầu kéo Chenglong (xe rơ moóc)</b> có những ưu điểm nổi trội như: Xe đầu kéo tiết kiệm nhiên liệu.</p>
+			<p>Độc lập giữa đầu xe và vận chuyển hàng hóa lên xuống: Phần đầu kéo có thể tách rời khiến việc vận chuyển hàng hóa lên xuống trở nên đơn giản và dễ dàng hơn nhiều, so với xe tải thông thường.</p>
+			<p>Chở được nhiều hàng hóa so với xe tải thông thường. Giảm thời gian lái xe cũng như vận chuyển hàng hóa khi vận chuyển những hàng hóa lớn bằng đường bộ.</p>
+			<p>Chúng ta thường dùng container để vận chuyển và kết nối với xe đầu kéo. Ngoài ra, một đầu kéo có thể kéo theo nhiều loại rơ mooc khác nhau khiến chiếc xe có thể dễ dàng thay đổi đầu kéo giữa đường nếu như gặp hỏng hóc.</p>
+			<p>Đồng thời làm giảm thời gian lái xe và vận chuyển của tài xế. Rơ mooc có thể xem như nhà kho. Rơ mooc thùng kín bảo vệ hàng hóa khỏi mưa nắng, gió bụi và có thể xem như nhà kho nếu được trang bị ổ khóa.</p>
+			<h2>Ô Tô Hải Âu- Đại lý xe đầu kéo Chenglong chất lượng, giá tốt</h2>
+			<img src="../img/news/008/3.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><p>Tại đại lý xe đầu kéo Chenglong Ô Tô Hải Âu có đa dạng các loại xe đầu kéo cầu dầu và cầu láp phù hợp với mọi nhu cầu của khách hàng. Trong đó có chiếc xe đầu kéo CHENGLONG H7 420HP (CẦU DẦU), được nhiều người ưa thích, bởi:</p></h6>
+			<ul>
+				<li>Động cơ của chiếc xe này là YC6MK420-50 đạt tiêu chuẩn khí thải Euro V cùng hệ thống phun nhiên liệu điện tử common-rail+bộ xử lý khí thải SCR.</li>
+				<li>Ly hợp: Ly hợp ma sát thủy lực và có trợ lực khí nén.</li>
+				<li>Đường kính : Ø 430 hiệu EATON.</li>
+				<li>Hộp số Model: 12JSD200TA-B (FAST công nghệ Mỹ) , cơ khí 12 số tiến 02 lùi, có đồng tốc</li>
+				<li>Trục trước: Tải trọng cầu 7 tấn</li>
+				<li>Trục sau: Tải trọng cầu sau 13 tấn, tỷ số truyền: 4.769</li>
+				<li>Khung chassi Khung: Loại hình thang, tiết diện chữ U 300(8+4) mm</li>
+				<li>Hệ thống treo trước: 9 lá nhíp, dạng bán elip, thanh cân bằng, thủy lực</li>
+				<li>Hệ thống treo sau: 12 lá nhíp, dạng bán elip</li>
+				<li>Thùng nhiên liệu: 600 L hợp kim nhôm có nắp khóa nhiên liệu.</li>
+				<li>Van WABCO, có phanh ABS</li>
+				<li>Hệ thống phanh: Phanh tang trống, dẫn động khí nén, bầu tích năng tác dụng bánh xe sau, có phanh khí xả động cơ, Phanh chống bó cứng ABS</li>
+				<li>Cabin Model: H73S, cabin lật chuyển bằng điện, ghế lái bóng hơi, có điều hòa, radio, 2 giường, 2 ghế ngồi.</li>
+			</ul>
+			<h6><b>Mọi thông tin chi tiết vui lòng liên hệ:</b></h6>
+			<p>CÔNG TY TNHH Ô TÔ HẢI ÂU</p>	
+			<p>Địa chỉ: Trạm dừng chân cầu Cần Thơ - P. Hưng Phú, Q. Cái Răng, TP. Cần Thơ.</p>
+			<p>Website: http://thegioichenglong.com/</p>
+			<p>Hotline: 0933 610 331</p>
+		</div>
+		<!-- END NEWS CONTENT -->
+
+		<!-- Foolter -->
+		<div class="w3-container w3-indigo w3-center w3-padding-24">All rights reserved ©2021<br>CÔNG TY TNHH Ô TÔ HẢI ÂU <br>Chi nhánh Miền Tây<br> Website: <a href="http://thegioichenglong.com">http://thegioichenglong.com</a>
+		</div>
+		<!-- Foolter -->
+	</body>
+	<script src="js/myjs.js"></script>
+	</html>
