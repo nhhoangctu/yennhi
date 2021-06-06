@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- SEO meta tags -->
+	<meta charset="UTF-8">
+<!-- 	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe"> -->
+
+	<meta name="keywords" content="thegioichenglong.com, Mua xe Chenglong, chenglong H7, Chenglong Can tho, xe dau keo chenglong, xe tai chenglong, xe ben chenglong, chenglong mien" />
+	<meta name="description" content="CÔNG TY TNHH Ô TÔ HẢI ÂU. Chi nhánh Miền Tây" />
+	<meta name="author" content="CÔNG TY TNHH Ô TÔ HẢI ÂU" />
+	<meta name="Robots" content="INDEX, FOLLOW ,all" />
+	<meta name="googlebot" content="INDEX,FOLLOW" />
+	<meta property="og:locale" content="vi_vn">
+	<!-- End SEO meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="shortcut icon" href="../img/logohaihau-title.png">
+	<title>THEGIOICHENGLONG.COM</title>
+	<style type="text/css">	
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>	
+</head>
+<body class="w3-serif">
+	
+	
+	<!-- Nav bar -->
+	<div class="w3-indigo w3-card w3-large w3-center">
+		<div class="w3-bar">
+			<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="../img/logo/logo.png" alt=""></a> -->
+			<a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
+			<div class="w3-dropdown-hover w3-mobile ">
+				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
+				<!-- <div class="w3-dropdown-content w3-bar-block">
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+				</div> -->
+			</div>
+			<a href="#Huongdanmuahang" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Huongdanmuahang')">HƯỚNG DẪN MUA HÀNG</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">DỊCH VỤ</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">PHỤ TÙNG</a>
+			<a href="#news" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TIN TỨC</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">LIÊN HỆ</a>
+<!-- 				<div class="w3-hide-medium">
+					<input type="text" class="w3-bar-item w3-button w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" style="width: 150px" placeholder="Search..">
+					<button class="w3-bar-item w3-button w3-green w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">Go</button>
+				</div> -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" onclick="showBarItems()">&#9776;</a>
+			</div>
+
+
+			<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="barItems">
+				<a href="../index.html" class="w3-bar-item w3-button">TRANG CHỦ</a>
+				<a href="" class="w3-bar-item w3-button">GIỚI THIỆU</a>
+				<div class="w3-mobile ">
+					<!-- <button class="w3-button w3-hover-yellow w3-padding" onclick="showProducts()">SẢN PHẨM <i class="fa fa-caret-down"></i></button> -->
+					<a href="#sanpham" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow" >SẢN PHẨM <i class="fa fa-caret-down"></i></a>
+					<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="products">
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+					</div>
+				</div>
+				<a href="#news" class="w3-bar-item w3-button">TIN TỨC</a>
+				<a href="" class="w3-bar-item w3-button">KHUYẾN MÃI</a>
+				<a href="" class="w3-bar-item w3-button">PHỤ TÙNG</a>
+				<a href="index.html#contact" class="w3-bar-item w3-button">LIÊN HỆ</a>
+			</div>
+		</div>
+		<!-- END Nav bar  -->
+
+
+		<!-- Logo and contact -->
+		<div class="w3-container w3-border-bottom w3-border-indigo w3-padding w3-light-grey">
+			<div class="w3-row">
+				<div class="w3-quarter w3-light-grey w3-padding w3-center w3-margin-top">
+					<img src="../img/logo/logohaihau.png" alt="Logo Hải Âu" style="width: 55%" id="hiddenLogo">
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium ">
+					<i class="fa fa-phone w3-green w3-large w3-padding w3-round w3-margin-bottom"> </i><a href="tel:0933610331" style="text-decoration: none"><span class="w3-text-red"><b> 0933 610 331</b></span> - <a href="tel:0931516154" style="text-decoration: none"><span class="w3-text-red"><b> 0931 516 154</b></span></a><span class="w3-text-red"><b> (Ms Nhi)</b></span>
+					<i class="fa fa-envelope w3-khaki w3-large w3-padding w3-round"> </i><a href="mailto: ttyenhi92@gmail.com" style="text-decoration: none"><span class="w3-text-red"><b> ttyenhi92@gmail.com</b></span></a><br>
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium">
+					<a href="https://www.facebook.com/buon.vui.3192" style="text-decoration: none"><i class="fa fa-facebook w3-indigo w3-large w3-padding w3-round w3-margin-bottom"></i> <b> Facebook</b></a><br>
+					<a href="https://www.youtube.com/results?search_query=xe+cheng+long" style="text-decoration: none;"><i class="fa fa-youtube w3-red w3-large w3-padding w3-round"></i><b> Youtube</b></a> <br>
+
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-hide-small w3-hide-medium">
+					<img src="../img/logo/chenglong-nobg.png" alt="Logo ChengLong" style="width: 80%; height: 83px">
+				</div>
+			</div>
+		</div>
+		<!-- END Logo and contact -->
+
+		<!-- Slideshow -->
+		<div class="w3-border">
+			<img class="mySlides" src="../img/slide-show/slide1-01-01-01.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
+		</div>
+		<!--  END Slideshow-->
+
+
+		<!-- NEWS CONTENT -->
+		<div class="w3-container w3-light-blue w3-content w3-large" style="max-width:1200px; text-align: justify;">
+			<h2 class="w3-center">Kinh nghiệm mua xe tải bạn phải biết</h2>
+			<p>Để mua được một chiếc xe tải chất lượng, đảm bảo về giá dựa trên rất nhiều yếu tố quyết định mà người mua cần phải biết như: thương hiệu xe, đại lý xe uy tín, cách, động cơ xe, tải trọng xe,…</p>
+			<p>Do đó, mọi người hãy cùng tham khảo những kinh nghiệm mua xe tải được chia sẻ sau đây nhé!</p>
+			<img src="../img/news/009/1.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><b>Kinh nghiệm mua xe tải bạn nên biết</b></h6>
+			<p><b>Lựa chọn hãng xe, dòng xe tải phù hợp</b></p>
+			<p>Có rất nhiều hãng xe và dòng xe khác nhau trên thị trường hiện nay, do vậy để quyết định mua xe tải bạn nên list các đầu hãng xe nổi tiếng, phổ biến để tham khảo và rút gọn mục tiêu lựa chọn lại nhé!</p>
+			<h6><b>Lựa chọn đại lý mua xe uy tín</b></h6>
+			<p>Đây chính là kinh nghiệm mua xe tải không thể bỏ qua. Việc chọn mua ở đại lý xe uy tín, lớn quyền lợi của bạn sẽ được đảm bảo như: giá cả hợp lý, nhiều chính sách ưu đãi, được hỗ trợ vay vốn mua trả góp, xe chính hãng,……</p>
+			<p>Gợi ý cho bạn đại lý xe tải Ô tô Hải Âu, một trong những công ty hơn phân phối các dòng xe tải nổi tiếng trên thị trường Việt Nam hiện nay, đến với Ô tô Hải Âu bạn sẽ nhận được những lợi ích như:</p>
+			<ul>
+				<li>Xe luôn có sẵn tại showroom</li>
+				<li>Giá thành hợp lý, khuyến mãi hấp dẫn</li>
+				<li>Hỗ trợ vay trả góp 80%, thủ tục nhanh chóng</li>
+				<li>Thủ tục mua bán nhanh chóng, đơn giản và thuận tiện, chế độ bảo hành cùng phụ tùng chính hãng tốt nhất.</li>
+				<li>Giao xe ngay sau khi hoàn thành hợp đồng</li>
+				<li>Đội ngũ nhân viên tư vấn nhiệt tình và có nhiều năm kinh nghiệm</li>
+				<li>Có hệ thống các trung tâm bảo hành chính hãng, chế độ hậu mãi chất lượng</li>
+			</ul>
+			<img src="../img/news/009/2.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><b>Những kinh nghiệm mua xe tải bạn nên chú ý</b></h6>
+			<b>Xác định nhu cầu mua xe</b>
+			<p>Kinh nghiệm mua xe tải. Xe tải được phân thành các dòng xe tải nhỏ, xe tải trung, xe tải nặng và mỗi loại lại có nhiều sản phẩm với những tính năng khác nhau như khả năng chịu quá tải như thế nào, động cơ hoạt động mạnh mẽ hay không, xe có tiết kiệm nhiên liệu hay không, thùng xe có phù hợp với hàng hóa chuyên chở của quý khách hay không…? Chính vì vậy khi bạn xác định được nhu cầu mua xe sẽ lựa chọn được chiếc xe phù hợp.</p>
+			<ul>
+				<li>Xác định mục đích mua xe: xe chở sắt thép, xe chở hoa quả, xe chở gia súc, xe cứu hộ,..</li>
+				<li>Xác định loại thùng xe phù hợp: phổ biến nhất trên thị trường là các loại thùng lửng, thùng mui bạt, thùng kín, thùng đông lạnh,…</li>
+				<li>Xác định mức tải trọng: xác định loại hàng hóa cũng như khu vực kinh doanh vận tải để chọn tải trọng phù hợp. VD nếu bạn thường xuyên chở hàng trong nội thành Hà Nội hoặc Hồ Chí Minh thì nên chọn xe tải nhỏ có tổng tải trọng dưới 5 tấn để dễ dàng di chuyển trong thành phố.</li>
+				<li>Xác định môi trường hoạt động của xe tải: biết được chiếc xe tải sẽ sử dụng cho khu vực địa hình thế nào sẽ giúp bạn lựa chọn được loại động cơ phù hợp. Nếu một chiếc xe tải chuyên chạy trên vùng núi sẽ cần quan tâm đến động cơ khỏe, khả năng tiết kiệm nhiên liệu, khả năng cân bằng của xe.</li>
+			</ul>
+			<p>Truy cập trang website http://thegioichenglong.com/ để tìm hiểu các mẫu, dòng xe tải phổ biến trên thị trường hiện nay nhé!</p>
+			<h6><b>Xác định mức tài chính</b></h6>
+			<p>Điều kiện tài chính sẽ tỉ lệ thuận với các dòng xe và chất lượng xe, nếu có tài chính chắc chắn bạn sẽ chọn mua những chiếc xe cao cấp chính hãng. Tuy nhiên, nếu bạn chỉ có một phần chi phí cũng không nên quá lo lắng và chọn mua những chiếc xe kém chất lượng hãy đã qua sử dụng nhé, bởi hiện tại ở các đại lý xe uy tín có chính sách hỗ trợ mua trả góp lên tới 80% đấy.</p>
+			<h6><b>Lái thử xe</b></h6>
+			Đây chính là một trong những kinh nghiệm mua xe tải. Nếu bạn hài lòng với những thông tin được đưa ra, hãy hẹn gặp để xem xe. Hãy kiểm tra kỹ càng để biết rõ xem xe vận hành như thế nào trong các điều kiện lái khác nhau. Hãy nghĩ đến sự thoải mái của bạn nữa nhé. Và bởi vì bạn đang lái thử xe nên bạn cần phải chú ý tới tất cả các khía cạnh trong quá trình lái. Dưới đây là một số điều bạn cần phải chú ý để biết rõ:
+			<ul>
+				<li>Xe chuyển động có nhẹ nhàng không?</li>
+				<li>Nếu bạn đang lái xe có hộp số điều khiển bằng tay (hộp số cơ khí), các vị trí số 1,2,3,4… ra vào có nhẹ nhàng không? Chân côn thế nào?</li>
+				<li>Bộ phận phanh xe hoạt động như thế nào?</li>
+				<li>Các bộ phận của xe liên kết với nhau như thế nào? Xe có thuận tiện để di chuyển sang trái hoặc sang phải không?</li>
+				<li>Bạn có thấy tiếng kêu lúc lắc, lách cách… không?</li>
+				<li>Hãy thử quành xe ở một góc phố. Vô-lăng lúc đó thế nào?</li>
+				<li>Có điểm che khuất nào không?</li>
+				<li>Hãy thử lái xe qua các chướng ngại vật và các chỗ trũng. Hệ thống giảm xóc lúc đó hoạt động thế nào?</li>
+				<li>Hãy thử chạy xe trên đường cao tốc. Xe có đạt được tốc độ như bạn mong muốn không?</li>
+				<li>Bộ phận tự điều khiển có hoạt động không? Trong lúc lái xe, bạn hãy chú ý tới sự thoải mái như:- Ghế ngồi có thoải mái không?</li>
+				<li>Phần taplo và phần để chân như thế nào?</li>
+			</ul>
+			<img src="../img/news/009/3.jpg" alt="" style="width: 100%; height: 500px;">
+			<p>Với những kinh nghiệm mua xe tải trên mong rằng sẽ giúp ích cho bạn khi chọn mua xe nhé. Chúc bạn chọn mua được chiếc xe ưng ý và phù hợp nhất nhé!</p>
+			<h6><b>Mọi thông tin chi tiết vui lòng liên hệ:</b></h6>
+			<p>CÔNG TY TNHH Ô TÔ HẢI ÂU</p>	
+			<p>Địa chỉ: Trạm dừng chân cầu Cần Thơ - P. Hưng Phú, Q. Cái Răng, TP. Cần Thơ.</p>
+			<p>Website: http://thegioichenglong.com/</p>
+			<p>Hotline: 0933 610 331</p>
+
+		</div>
+		<!-- END NEWS CONTENT -->
+
+		<!-- Foolter -->
+		<div class="w3-container w3-indigo w3-center w3-padding-24">All rights reserved ©2021<br>CÔNG TY TNHH Ô TÔ HẢI ÂU <br>Chi nhánh Miền Tây<br> Website: <a href="http://thegioichenglong.com">http://thegioichenglong.com</a>
+		</div>
+		<!-- Foolter -->
+	</body>
+	<script src="js/myjs.js"></script>
+	</html>

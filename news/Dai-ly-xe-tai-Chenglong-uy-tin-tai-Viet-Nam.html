@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- SEO meta tags -->
+	<meta charset="UTF-8">
+<!-- 	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe"> -->
+
+	<meta name="keywords" content="thegioichenglong.com, Mua xe Chenglong, chenglong H7, Chenglong Can tho, xe dau keo chenglong, xe tai chenglong, xe ben chenglong, chenglong mien" />
+	<meta name="description" content="CÔNG TY TNHH Ô TÔ HẢI ÂU. Chi nhánh Miền Tây" />
+	<meta name="author" content="CÔNG TY TNHH Ô TÔ HẢI ÂU" />
+	<meta name="Robots" content="INDEX, FOLLOW ,all" />
+	<meta name="googlebot" content="INDEX,FOLLOW" />
+	<meta property="og:locale" content="vi_vn">
+	<!-- End SEO meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="shortcut icon" href="../img/logohaihau-title.png">
+	<title>THEGIOICHENGLONG.COM</title>
+	<style type="text/css">	
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>	
+</head>
+<body class="w3-serif">
+	
+	
+	<!-- Nav bar -->
+	<div class="w3-indigo w3-card w3-large w3-center">
+		<div class="w3-bar">
+			<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="../img/logo/logo.png" alt=""></a> -->
+			<a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
+			<div class="w3-dropdown-hover w3-mobile ">
+				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
+				<!-- <div class="w3-dropdown-content w3-bar-block">
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+				</div> -->
+			</div>
+			<a href="#Huongdanmuahang" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Huongdanmuahang')">HƯỚNG DẪN MUA HÀNG</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">DỊCH VỤ</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">PHỤ TÙNG</a>
+			<a href="#news" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TIN TỨC</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">LIÊN HỆ</a>
+<!-- 				<div class="w3-hide-medium">
+					<input type="text" class="w3-bar-item w3-button w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" style="width: 150px" placeholder="Search..">
+					<button class="w3-bar-item w3-button w3-green w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">Go</button>
+				</div> -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" onclick="showBarItems()">&#9776;</a>
+			</div>
+
+
+			<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="barItems">
+				<a href="../index.html" class="w3-bar-item w3-button">TRANG CHỦ</a>
+				<a href="" class="w3-bar-item w3-button">GIỚI THIỆU</a>
+				<div class="w3-mobile ">
+					<!-- <button class="w3-button w3-hover-yellow w3-padding" onclick="showProducts()">SẢN PHẨM <i class="fa fa-caret-down"></i></button> -->
+					<a href="#sanpham" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow" >SẢN PHẨM <i class="fa fa-caret-down"></i></a>
+					<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="products">
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+					</div>
+				</div>
+				<a href="#news" class="w3-bar-item w3-button">TIN TỨC</a>
+				<a href="" class="w3-bar-item w3-button">KHUYẾN MÃI</a>
+				<a href="" class="w3-bar-item w3-button">PHỤ TÙNG</a>
+				<a href="index.html#contact" class="w3-bar-item w3-button">LIÊN HỆ</a>
+			</div>
+		</div>
+		<!-- END Nav bar  -->
+
+
+		<!-- Logo and contact -->
+		<div class="w3-container w3-border-bottom w3-border-indigo w3-padding w3-light-grey">
+			<div class="w3-row">
+				<div class="w3-quarter w3-light-grey w3-padding w3-center w3-margin-top">
+					<img src="../img/logo/logohaihau.png" alt="Logo Hải Âu" style="width: 55%" id="hiddenLogo">
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium ">
+					<i class="fa fa-phone w3-green w3-large w3-padding w3-round w3-margin-bottom"> </i><a href="tel:0933610331" style="text-decoration: none"><span class="w3-text-red"><b> 0933 610 331</b></span> - <a href="tel:0931516154" style="text-decoration: none"><span class="w3-text-red"><b> 0931 516 154</b></span></a><span class="w3-text-red"><b> (Ms Nhi)</b></span>
+					<i class="fa fa-envelope w3-khaki w3-large w3-padding w3-round"> </i><a href="mailto: ttyenhi92@gmail.com" style="text-decoration: none"><span class="w3-text-red"><b> ttyenhi92@gmail.com</b></span></a><br>
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium">
+					<a href="https://www.facebook.com/buon.vui.3192" style="text-decoration: none"><i class="fa fa-facebook w3-indigo w3-large w3-padding w3-round w3-margin-bottom"></i> <b> Facebook</b></a><br>
+					<a href="https://www.youtube.com/results?search_query=xe+cheng+long" style="text-decoration: none;"><i class="fa fa-youtube w3-red w3-large w3-padding w3-round"></i><b> Youtube</b></a> <br>
+
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-hide-small w3-hide-medium">
+					<img src="../img/logo/chenglong-nobg.png" alt="Logo ChengLong" style="width: 80%; height: 83px">
+				</div>
+			</div>
+		</div>
+		<!-- END Logo and contact -->
+
+		<!-- Slideshow -->
+		<div class="w3-border">
+			<img class="mySlides" src="../img/slide-show/slide1-01-01-01.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
+		</div>
+		<!--  END Slideshow-->
+
+
+		<!-- NEWS CONTENT -->
+		<div class="w3-container w3-light-blue w3-content w3-large" style="max-width:1200px; text-align: justify;">
+			<h2 class="w3-center">Mua xe ben chở đất ở đâu rẻ được yêu thích</h2>
+			<p>Bạn muốn tìm mua xe tải để sử dụng cho công việc của mình? Bạn không biết nên chọn mua dòng xe tải thương hiệu nào? Có nên mua xe tải Chenglong hay không? Đại lý xe tải Chenglong nào uy tín trên thị trường hiện nay? Hãy cùng chúng tôi đi tìm hiểu ngay sau đây nhé!</p>
+			<img src="../img/news/010/1.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><b>Tìm hiểu về thương hiệu xe tải Chenglong</h6></b>
+			<p>Xe tải Chenglong là dòng sản phẩm nổi tiếng trên thị trường thế giới và tại Việt Nam. Các dòng xe tải của Chenglong đã được Chenglong Hải Âu sớm nhập khẩu và cung cấp trên thị trường nước ta từ những năm 1991, 1992. Tính đến thời điểm hiện nay, sau hơn hai mươi năm xuất hiện, các sản phẩm của hãng không ngừng được ra mắt, cải tiến để phù hợp với địa hình và nhu cầu của khách hàng Việt Nam.</p>
+			<p>Doanh số của Chenglong luôn đạt mức trên dưới 1000 xe mỗi năm, đây là một con số ấn tượng mà không phải dòng xe nhập khẩu nào cũng làm được điều đó.</p>
+			<p>Các ưu điểm ưu việt của xe tải Chenglong được khách hàng đánh giá cao chính là động cơ mạnh mẽ, công suất cao, thiết kế đẹp hợp mắt người Việt, chở được nhiều hàng hóa, tiết kiệm nhiên liệu và giảm thiểu ô nhiễm môi trường.</p>
+			<p>Đây là những lợi thế rất quan trọng để giải thích lý do vì sao thương hiệu này lại được nhiều khách hàng ưa chuộng và làm hài lòng cả khách hàng khó tình nhất. Xe tải ChengLong sẽ khiến nhiều người phải có cái nhìn lại về chất lượng các dòng xe Trung vốn trước đây luôn bị đánh giá là chất lượng kém.</p>
+			<img src="../img/news/010/2.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><b>Đại lý xe tải Chenglong tại Việt Nam</h6></b>
+			<p>Công ty TNHH ô tô Hải Âu là đơn vị duy nhất được ủy quyền nhập khẩu và phân phối dòng xe mang nhãn hiệu Chenglong tại Việt Nam. Ô tô Hải Âu có hệ thống 4 trung tâm 4S và chuỗi đại lý khắp cả nước cung cấp các dòng xe mang nhãn hiệu Chenglong như: xe đầu kéo, xe tải thùng, xe ben, xe bồn trộn bê tông,….và các loại sơ mi rơ mooc.</p>
+			<p>Đại lý xe tải Chenglong Hải Âu sở hữu những mẫu xe tải Chenglong nổi bật như:</p>
+			<ul>
+				<li>Xe tải thùng Chenglong H5 6×4 270HP</li>
+				<li>Xe tải thùng Chenglong H7 8×4 330HP</li>
+			</ul>
+			<h6><b>Lý do nên chọn mua xe tải Chenglong tại Ô tô Hải Âu</h6></b>
+			<img src="../img/news/010/3.jpg" alt="" style="width: 100%; height: 500px;">
+			<ul>
+				<li>Xe luôn có sẵn tại showroom</li>
+				<li>Giá thành hợp lý, khuyến mãi hấp dẫn</li>
+				<li>Hỗ trợ vay trả góp 80%, thủ tục nhanh chóng</li>
+				<li>Thủ tục mua bán nhanh chóng, đơn giản và thuận tiện, chế độ bảo hành cùng phụ tùng chính hãng tốt nhất.</li>
+				<li>Giao xe ngay sau khi hoàn thành hợp đồng</li>
+				<li>Đội ngũ nhân viên tư vấn nhiệt tình và có nhiều năm kinh nghiệm</li>
+				<li>Có hệ thống các trung tâm bảo hành chính hãng, chế độ hậu mãi chất lượng</li>
+			</ul>
+		</div>
+		<!-- END NEWS CONTENT -->
+
+		<!-- Foolter -->
+		<div class="w3-container w3-indigo w3-center w3-padding-24">All rights reserved ©2021<br>CÔNG TY TNHH Ô TÔ HẢI ÂU <br>Chi nhánh Miền Tây<br> Website: <a href="http://thegioichenglong.com">http://thegioichenglong.com</a>
+		</div>
+		<!-- Foolter -->
+	</body>
+	<script src="js/myjs.js"></script>
+	</html>
