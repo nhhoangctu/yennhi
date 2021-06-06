@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- SEO meta tags -->
+	<meta charset="UTF-8">
+<!-- 	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe"> -->
+
+	<meta name="keywords" content="thegioichenglong.com, Mua xe Chenglong, chenglong H7, Chenglong Can tho, xe dau keo chenglong, xe tai chenglong, xe ben chenglong, chenglong mien" />
+	<meta name="description" content="CÔNG TY TNHH Ô TÔ HẢI ÂU. Chi nhánh Miền Tây" />
+	<meta name="author" content="CÔNG TY TNHH Ô TÔ HẢI ÂU" />
+	<meta name="Robots" content="INDEX, FOLLOW ,all" />
+	<meta name="googlebot" content="INDEX,FOLLOW" />
+	<meta property="og:locale" content="vi_vn">
+	<!-- End SEO meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="shortcut icon" href="../img/logohaihau-title.png">
+	<title>THEGIOICHENGLONG.COM</title>
+	<style type="text/css">	
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>	
+</head>
+<body class="w3-serif">
+	
+	
+	<!-- Nav bar -->
+	<div class="w3-indigo w3-card w3-large w3-center">
+		<div class="w3-bar">
+			<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="../img/logo/logo.png" alt=""></a> -->
+			<a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
+			<div class="w3-dropdown-hover w3-mobile ">
+				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
+				<!-- <div class="w3-dropdown-content w3-bar-block">
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+					<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+				</div> -->
+			</div>
+			<a href="#Huongdanmuahang" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Huongdanmuahang')">HƯỚNG DẪN MUA HÀNG</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">DỊCH VỤ</a>
+			<a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">PHỤ TÙNG</a>
+			<a href="#news" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TIN TỨC</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">LIÊN HỆ</a>
+<!-- 				<div class="w3-hide-medium">
+					<input type="text" class="w3-bar-item w3-button w3-input w3-white w3-mobile w3-padding w3-hover-yellow w3-border w3-hide-small w3-hide-medium" style="width: 150px" placeholder="Search..">
+					<button class="w3-bar-item w3-button w3-green w3-mobile w3-padding w3-hover-yellow w3-hide-small w3-hide-medium">Go</button>
+				</div> -->
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" onclick="showBarItems()">&#9776;</a>
+			</div>
+
+
+			<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="barItems">
+				<a href="../index.html" class="w3-bar-item w3-button">TRANG CHỦ</a>
+				<a href="" class="w3-bar-item w3-button">GIỚI THIỆU</a>
+				<div class="w3-mobile ">
+					<!-- <button class="w3-button w3-hover-yellow w3-padding" onclick="showProducts()">SẢN PHẨM <i class="fa fa-caret-down"></i></button> -->
+					<a href="#sanpham" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow" >SẢN PHẨM <i class="fa fa-caret-down"></i></a>
+					<div class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" id="products">
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Ben</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Bồn trộn</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Mooc</a>
+						<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe khác</a>
+					</div>
+				</div>
+				<a href="#news" class="w3-bar-item w3-button">TIN TỨC</a>
+				<a href="" class="w3-bar-item w3-button">KHUYẾN MÃI</a>
+				<a href="" class="w3-bar-item w3-button">PHỤ TÙNG</a>
+				<a href="index.html#contact" class="w3-bar-item w3-button">LIÊN HỆ</a>
+			</div>
+		</div>
+		<!-- END Nav bar  -->
+
+
+		<!-- Logo and contact -->
+		<div class="w3-container w3-border-bottom w3-border-indigo w3-padding w3-light-grey">
+			<div class="w3-row">
+				<div class="w3-quarter w3-light-grey w3-padding w3-center w3-margin-top">
+					<img src="../img/logo/logohaihau.png" alt="Logo Hải Âu" style="width: 55%" id="hiddenLogo">
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium ">
+					<i class="fa fa-phone w3-green w3-large w3-padding w3-round w3-margin-bottom"> </i><a href="tel:0933610331" style="text-decoration: none"><span class="w3-text-red"><b> 0933 610 331</b></span> - <a href="tel:0931516154" style="text-decoration: none"><span class="w3-text-red"><b> 0931 516 154</b></span></a><span class="w3-text-red"><b> (Ms Nhi)</b></span>
+					<i class="fa fa-envelope w3-khaki w3-large w3-padding w3-round"> </i><a href="mailto: ttyenhi92@gmail.com" style="text-decoration: none"><span class="w3-text-red"><b> ttyenhi92@gmail.com</b></span></a><br>
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-large w3-hide-small w3-hide-medium">
+					<a href="https://www.facebook.com/buon.vui.3192" style="text-decoration: none"><i class="fa fa-facebook w3-indigo w3-large w3-padding w3-round w3-margin-bottom"></i> <b> Facebook</b></a><br>
+					<a href="https://www.youtube.com/results?search_query=xe+cheng+long" style="text-decoration: none;"><i class="fa fa-youtube w3-red w3-large w3-padding w3-round"></i><b> Youtube</b></a> <br>
+
+				</div>
+				<div class="w3-quarter w3-light-grey w3-padding w3-hide-small w3-hide-medium">
+					<img src="../img/logo/chenglong-nobg.png" alt="Logo ChengLong" style="width: 80%; height: 83px">
+				</div>
+			</div>
+		</div>
+		<!-- END Logo and contact -->
+
+		<!-- Slideshow -->
+		<div class="w3-border">
+			<img class="mySlides" src="../img/slide-show/slide1-01-01-01.jpg" alt="" style="width: 100%; height: 600px ;border: 0;">
+		</div>
+		<!--  END Slideshow-->
+
+
+		<!-- NEWS CONTENT -->
+		<div class="w3-container w3-light-blue w3-content w3-large" style="max-width:1200px; text-align: justify;">
+			<h2 class="w3-center">Những lưu ý khi lái xe ban đêm</h2>
+			<p>Việc di chuyển, lại xe vào ban đêm khó có thể tráng khỏi vậy khi lái xe ban đêm cần trang bị những gì để đảm bảo an toàn trong từng đoạn đường đi. Hãy cùng chúng tôi tham khảo những kinh nghiệm lái xe ban đêm sau đây nhé!</p>
+			<img src="../img/news/007/1.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><p>Kinh nghiệm lái xe ban đêm an toàn nhất định phải lưu ý</p></h6>
+			<b>Sử dụng hợp lý chế độ chiếu sáng pha, cốt</b>
+			<p>Đèn chiếu sáng thường có hai chế độ pha và cốt. Trong đó, đèn cốt là đèn chiếu gần, góc chiếu thấp giúp người lái xe quan sát được tình trạng mặt đường. Khi lái xe vào ban đêm qua các tuyến đường nội thành, khu dân cư nên giảm tốc độ và bật chế độ đèn cốt.</p>
+			<p>Trong khi đó, đèn pha có cường độ ánh sáng mạnh, chiếu xa hơn giúp người điều khiển xe thấy được chướng ngại và các biển báo từ xa. Lái xe chỉ nên sử dụng chế độ đèn pha khi lái xe trên các đoạn đường cao tốc, đường trường ít phương tiện và không có xe đi ngược chiều.</p>
+			<p>Với những đoạn đường có dải phân cách thấp, hoặc ở chỗ có vạch liền hay vạch đứt, khi có xe đi ngược chiều, hãy chuyển về chế độ đèn cốt để tránh gây lóa cho tài xế của xe đi ngược chiều. Khi muốn vượt xe phía nên nháy đèn để ra hiệu xin vượt. Trước khi vào cua, nếu không có xe ngược chiều, lái xe có thể “đá đèn” pha để mở rộng góc quan sát sau đó chuyển về cốt.</p>
+			<img src="../img/news/007/2.jpg" alt="" style="width: 100%; height: 500px;">
+			<b>Di chuyển với tốc độ phù hợp</b>
+			<p>Chắc hẳn các bạn đã biết, khi lái xe ban đêm, tầm nhìn sẽ bị hạn chế. Vì vậy, để đảm bảo an toàn khi lái xe vào thời điểm này, các bạn nên điều khiển ô tô di chuyển chậm hơn, phù hợp khoảng chiếu sáng của hệ thống đèn pha và không vượt quá tốc độ cho phép.</p>
+			<img src="../img/news/007/3.jpg" alt="" style="width: 100%; height: 500px;">
+			<h6><b>Dừng lái xe và nghỉ ngơi ngay khi cảm thấy mệt mỏi, buồn ngủ</b></h6>
+			<p>Ngủ gật và mệt mỏi khi lái xe được cho là nguyên nhân lớn nhất dẫn đến những vụ tai nạn thương tâm của nhiều tài xế khi lái xe ban đêm. Vì vậy, trong quá trình lái xe nếu bạn cảm thấy buồn ngủ hay mệt mỏi bạn nên đỗ xe gọn vào nơi an toàn, chợp mắt và nghỉ ngơi một chút cho đến khi đủ tỉnh táo để tham gia giao thông.</p>
+			<p>Ngoài ra, bạn cũng nên mang theo bảng báo hiệu có phản quang để sử dụng trong trường hợp phải đỗ xe bên đường.</p>
+			<img src="../img/news/007/4.jpg" alt="" style="width: 100%; height: 500px;">
+			<b>Không nhìn vào đèn pha của xe ngược chiều</b>
+			<p>Thông thường di chuyển vào ban đêm hoặc những vùng không có đèn đường, người lái thường rất hay gặp phải tình huống bị chói mắt do nhìn vào đèn pha của xe ngược chiều. Để tránh tai nạn xảy ra, nếu cảm thấy bị chói, hãy ra hiệu cho xe đối diện bằng cách nháy đèn. Đồng thời di chuyển chậm lại và không nhìn vào đèn của đối phương.</p>
+			<img src="../img/news/007/5.jpg" alt="" style="width: 100%; height: 500px;">
+			<b>Thường xuyên kiểm tra, vệ sinh kính lái, gương chiếu hậu</b>
+			<p>Đây là một việc làm tưởng chừng như rất đơn giản nhưng lại ảnh hưởng rất lớn đến an toàn của bạn khi lai xe, nhất là vào ban đêm.</p>
+			<p>Bạn hãy thường xuyên kiểm tra, vệ sinh kính lái, gương chiếu hậu để đảm chúng không bị dính những vết bám bẩn, mờ. Vì nếu dính bẩn khi ánh sáng của xe ngược chiều chiếu vào sẽ khiến tầm nhìn của bạn bị hạn chế</p>
+			<h6><b>Kinh nghiệm lái xe ban đêm an toàn phải thực hiện đúng</b></h6>
+			<b>Không dùng chất kích thích rượu bia khi lái xe</b>
+			<p>Đây là quy định không chỉ được ban hành ở Việt Nam mà trên toàn thế giới. Người uống rượu bia sẽ bị xử phạt vô cùng nặng nếu lái xe.</p>
+			<p>Không chỉ khi lái xe ban đêm, mà tuyệt đối bạn không được uống rượu, bia, hoặc sử dụng đồ uống có cồn khi lái xe dù là ban ngày hay ban đêm.</p>
+			<b>Thắt dây an toàn khi lái xe</b>
+			<p>Điều này rất quan trọng nên bạn đừng quên thực hiện mỗi khi lai xe nhé</p>
+			<b>Không dừng xe đột ngột</b>
+			<p>Khi có ý định dừng xe bạn hãy ra tín hiệu xe và từ từ dừng lại để người đi sau có thể nhận biết và tránh xảy ra va chạm không đáng có.</p>
+			<p>Với những kinh nghiệm lái xe ban đêm trên mong rằng sẽ giúp ích cho bạn.</p>
+			<h6><b>Mọi thông tin chi tiết vui lòng liên hệ:</b></h6>
+			<p>CÔNG TY TNHH Ô TÔ HẢI ÂU</p>	
+			<p>Địa chỉ: Trạm dừng chân cầu Cần Thơ - P. Hưng Phú, Q. Cái Răng, TP. Cần Thơ.</p>
+			<p>Website: http://thegioichenglong.com/</p>
+			<p>Hotline: 0933 610 331</p>
+		</div>
+		<!-- END NEWS CONTENT -->
+
+		<!-- Foolter -->
+		<div class="w3-container w3-indigo w3-center w3-padding-24">All rights reserved ©2021<br>CÔNG TY TNHH Ô TÔ HẢI ÂU <br>Chi nhánh Miền Tây<br> Website: <a href="http://thegioichenglong.com">http://thegioichenglong.com</a>
+		</div>
+		<!-- Foolter -->
+	</body>
+	<script src="js/myjs.js"></script>
+	</html>
