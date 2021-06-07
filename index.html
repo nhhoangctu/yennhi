@@ -36,36 +36,49 @@
 		margin: 10px;
 		text-align: center;
 	}
+	div.scrollmenu {
+		background-color: #333;
+		overflow: auto;
+		white-space: nowrap;
+	}
+
+	div.scrollmenu a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px;
+		text-decoration: none;
+	}
+
+	div.scrollmenu a:hover {
+		background-color: #777;
+	}
 </style>	
 </head>
 <body class="w3-serif">
-	<!-- Nav button -->
-<!-- div class="w3-bottom" style="width: 100%">
-	<a href="#top" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Về đầu trang</a>
-	<a href="#sanpham" class="w3-border w3-padding w3-right w3-button w3-indigo w3-small w3-hover-yellow w3-round"><span class="fa fa-arrow-up w3-spin"></span> <br>Menu sản phẩm</a>
-</div> -->
 
-<div class="navButton">
-	<div class="w3-bar-block">
-		<a href="#sanpham" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-truck w3-round w3-padding w3-indigo"></i></a>			
-		<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-messenger.png" alt="" style="width: 102%; height: 100%;" class="w3-padding w3-round w3-blue"></a>	
-		<a href="https://zalo.me/0933610331" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-zalo-chat-white.png" alt="" style="width: 102%; height: 100%" class="w3-padding w3-blue w3-round"></a>		
-		<a href="tel:0933 610 331" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-phone w3-round w3-padding w3-green"></i></a>			
-		<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-facebook-square w3-round w3-padding w3-indigo"></i></a>			
-		<a href="https://www.youtube.com/results?search_query=xe+cheng+long" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-youtube w3-round w3-padding w3-red"></i></a>			
-		<a href="#top" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-home w3-round w3-padding w3-blue"></i></a>			
+
+	<div class="navButton">
+		<div class="w3-bar-block">
+			<a href="#sanpham" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-truck w3-round w3-padding w3-indigo"></i></a>			
+			<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-messenger.png" alt="" style="width: 102%; height: 100%;" class="w3-padding w3-round w3-blue"></a>	
+			<a href="https://zalo.me/0933610331" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-zalo-chat-white.png" alt="" style="width: 102%; height: 100%" class="w3-padding w3-blue w3-round"></a>		
+			<a href="tel:0933 610 331" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-phone w3-round w3-padding w3-green"></i></a>			
+			<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-facebook-square w3-round w3-padding w3-indigo"></i></a>			
+			<a href="https://www.youtube.com/results?search_query=xe+cheng+long" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-youtube w3-round w3-padding w3-red"></i></a>			
+			<a href="#top" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-home w3-round w3-padding w3-blue"></i></a>			
+		</div>
 	</div>
-</div>
-<!-- End Nav button -->
+	<!-- End Nav button -->
 
-<!-- Nav bar -->
-<div class="w3-indigo w3-card w3-large w3-center">
-	<div class="w3-bar">
-		<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="img/logo/logo.png" alt="></a> -->
-		<a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
-		<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
-		<div class="w3-dropdown-hover w3-mobile ">
-			<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
+	<!-- Nav bar -->
+	<div class="w3-indigo w3-card w3-large w3-center">
+		<div class="w3-bar">
+			<!-- <a href="" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium"><img src="img/logo/logo.png" alt="></a> -->
+			<a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium">TRANG CHỦ</a>
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="showModal('Tongquatvecongty')">GIỚI THIỆU</a>
+			<div class="w3-dropdown-hover w3-mobile ">
+				<a href="#sanpham" class="w3-bar-item w3-button w3-mobile w3-padding w3-hide-small w3-hide-medium" onclick="setTopPosition()">SẢN PHẨM</a>
 			<!-- <div class="w3-dropdown-content w3-bar-block">
 				<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Tải thùng</a>
 				<a href="" class="w3-bar-item w3-light-blue w3-button w3-padding w3-hover-yellow">Xe Đầu kéo</a>
@@ -146,15 +159,26 @@
 	<!-- Refer sản phẩm-->
 	<div class="w3-center w3-indigo" id="sanpham">
 		<h2 class="w3-center w3-text-white"><b>SẢN PHẨM XE CỦA THẾ GIỚI CHENG LONG</b></h2>
-		<div class="w3-indigo w3-large w3-bar w3-border-top">
+		<div class="w3-indigo w3-large w3-bar w3-border-top w3-hide-small">
 			<a href="#xetaithung" class="w3-bar-item w3-button w3-padding tablink w3-red" onclick="openCategory(event, 'xetaithung')">Xe Tải thùng</a>
 			<a href="#xedaukeo" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'xedaukeo')">Xe Đầu kéo</a>
 			<a href="#xeben" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'xeben')">Xe Ben</a>
 			<a href="#xebon" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'xebon')">Xe Bồn</a>
 			<a href="#somiromooc" class="w3-bar-item w3-button w3-padding tablink" onclick="openCategory(event, 'somiromooc')">Sơ mi rơ moóc</a>
 		</div>
+
+		<div class="w3-center w3-indigo w3-hide-large w3-hide-medium">
+			<div class="scrollmenu w3-large">
+				<a href="#xetaithung" class="tablink w3-red" onclick="openCategory(event, 'xetaithung')">Xe Tải thùng</a>
+				<a href="#xedaukeo" class="tablink" onclick="openCategory(event, 'xedaukeo')">Xe Đầu kéo</a>
+				<a href="#xeben" class="tablink" onclick="openCategory(event, 'xeben')">Xe Ben</a>
+				<a href="#xebon" class="tablink" onclick="openCategory(event, 'xebon')">Xe Bồn</a>
+				<a href="#somiromooc" class="tablink" onclick="openCategory(event, 'somiromooc')">Sơ mi rơ moóc</a>
+			</div>
+		</div>
 	</div>
 	<!-- End Refer sản phẩm-->
+	
 
 	<!-- Xe tải thùng -->
 	<div class="w3-padding-32 w3-light-grey category">
