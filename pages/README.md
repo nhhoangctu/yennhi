@@ -1,2 +1,0 @@
-# yennhi
-Yến Nhi project
