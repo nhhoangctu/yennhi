@@ -3,23 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- SEO meta tags -->
-	<meta charset="UTF-8">
-<!-- 	<meta name="description" content="Free Web tutorials">
-<meta name="keywords" content="HTML, CSS, JavaScript">
-<meta name="author" content="John Doe"> -->
-
-<meta name="keywords" content="thegioichenglong.com, Mua xe Chenglong, chenglong H7, Chenglong Can tho, xe dau keo chenglong, xe tai chenglong, xe ben chenglong, chenglong mien" />
-<meta name="description" content="CÔNG TY TNHH Ô TÔ HẢI ÂU. Chi nhánh Miền Tây" />
-<meta name="author" content="CÔNG TY TNHH Ô TÔ HẢI ÂU" />
-<meta name="Robots" content="INDEX, FOLLOW ,all" />
-<meta name="googlebot" content="INDEX,FOLLOW" />
-<meta property="og:locale" content="vi_vn">
-<!-- End SEO meta tags -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="img/logohaihau-title.png">
-<title>THEGIOICHENGLONG.COM</title>
+	<meta name="keywords" content="thegioichenglong.com, Mua xe Chenglong, chenglong H7, Chenglong Can tho, xe dau keo chenglong, xe tai chenglong, xe ben chenglong, chenglong mien" />
+	<meta name="description" content="CÔNG TY TNHH Ô TÔ HẢI ÂU. Chi nhánh Miền Tây" />
+	<meta name="author" content="CÔNG TY TNHH Ô TÔ HẢI ÂU" />
+	<meta name="Robots" content="INDEX, FOLLOW ,all" />
+	<meta name="googlebot" content="INDEX,FOLLOW" />
+	<meta property="og:locale" content="vi_vn">
+	<!-- End SEO meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="img/logo/logo-hai-au.jpg" class="w3-indigo">
+	<title>THEGIOICHENGLONG.COM</title>
+</head>
 <style type="text/css">	
 	html {
 		scroll-behavior: smooth;
@@ -28,7 +24,7 @@
 	.navButton{
 		position: fixed;
 		right: 0;
-		bottom: 100px;
+		bottom: 10px;
 		width: 80px;
 		z-index: 1;
 		color: red;
@@ -53,17 +49,192 @@
 	div.scrollmenu a:hover {
 		background-color: #777;
 	}
+
+	/**/
+	.hotline-phone-ring-wrap {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			z-index: 999999;
+		}
+		.hotline-phone-ring {
+			position: relative;
+			visibility: visible;
+			background-color: transparent;
+			width: 110px;
+			height: 110px;
+			cursor: pointer;
+			z-index: 11;
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translateZ(0);
+			transition: visibility .5s;
+			left: 0;
+			bottom: 0;
+			display: block;
+		}
+		.hotline-phone-ring-circle {
+			width: 85px;
+			height: 85px;
+			top: 10px;
+			left: 10px;
+			position: absolute;
+			background-color: transparent;
+			border-radius: 100%;
+			border: 2px solid #e60808;
+			-webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+			animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+			transition: all .5s;
+			-webkit-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			opacity: 0.5;
+		}
+		.hotline-phone-ring-circle-fill {
+			width: 55px;
+			height: 55px;
+			top: 25px;
+			left: 25px;
+			position: absolute;
+			background-color: rgba(230, 8, 8, 0.7);
+			border-radius: 100%;
+			border: 2px solid transparent;
+			-webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+			transition: all .5s;
+			-webkit-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+		}
+		.hotline-phone-ring-img-circle {
+			background-color: #e60808;
+			width: 33px;
+			height: 33px;
+			top: 37px;
+			left: 37px;
+			position: absolute;
+			background-size: 20px;
+			border-radius: 100%;
+			border: 2px solid transparent;
+			-webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+			animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+			-webkit-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.hotline-phone-ring-img-circle .pps-btn-img {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+		}
+		.hotline-phone-ring-img-circle .pps-btn-img img {
+			width: 20px;
+			height: 20px;
+		}
+		.hotline-bar {
+			position: absolute;
+			background: rgba(230, 8, 8, 0.75);
+			height: 40px;
+			width: 180px;
+			line-height: 40px;
+			border-radius: 3px;
+			padding: 0 10px;
+			background-size: 100%;
+			cursor: pointer;
+			transition: all 0.8s;
+			-webkit-transition: all 0.8s;
+			z-index: 9;
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 50px !important;
+			/* width: 175px !important; */
+			left: 33px;
+			bottom: 37px;
+		}
+		.hotline-bar > a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 15px;
+			font-weight: bold;
+			text-indent: 50px;
+			display: block;
+			letter-spacing: 1px;
+			line-height: 40px;
+			font-family: Arial;
+		}
+		.hotline-bar > a:hover,
+		.hotline-bar > a:active {
+			color: #fff;
+		}
+		@-webkit-keyframes phonering-alo-circle-anim {
+			0% {
+				-webkit-transform: rotate(0) scale(0.5) skew(1deg);
+				-webkit-opacity: 0.1;
+			}
+			30% {
+				-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+				-webkit-opacity: 0.5;
+			}
+			100% {
+				-webkit-transform: rotate(0) scale(1) skew(1deg);
+				-webkit-opacity: 0.1;
+			}
+		}
+		@-webkit-keyframes phonering-alo-circle-fill-anim {
+			0% {
+				-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: 0.6;
+			}
+			50% {
+				-webkit-transform: rotate(0) scale(1) skew(1deg);
+				opacity: 0.6;
+			}
+			100% {
+				-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+				opacity: 0.6;
+			}
+		}
+		@-webkit-keyframes phonering-alo-circle-img-anim {
+			0% {
+				-webkit-transform: rotate(0) scale(1) skew(1deg);
+			}
+			10% {
+				-webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+			}
+			20% {
+				-webkit-transform: rotate(25deg) scale(1) skew(1deg);
+			}
+			30% {
+				-webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+			}
+			40% {
+				-webkit-transform: rotate(25deg) scale(1) skew(1deg);
+			}
+			50% {
+				-webkit-transform: rotate(0) scale(1) skew(1deg);
+			}
+			100% {
+				-webkit-transform: rotate(0) scale(1) skew(1deg);
+			}
+		}
+		@media (max-width: 768px) {
+			.hotline-bar {
+				display: none;
+			}
+		}
 </style>	
 </head>
 <body class="w3-serif">
-
-
 	<div class="navButton">
 		<div class="w3-bar-block">
 			<a href="#sanpham" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-truck w3-round w3-padding w3-indigo"></i></a>			
 			<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-messenger.png" alt="" style="width: 102%; height: 100%;" class="w3-padding w3-round w3-blue"></a>	
-			<a href="https://zalo.me/0933610331" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-zalo-chat-white.png" alt="" style="width: 102%; height: 100%" class="w3-padding w3-blue w3-round"></a>		
-			<a href="tel:0933 610 331" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-phone w3-round w3-padding w3-green"></i></a>			
+			<a href="https://zalo.me/0933610331" class="w3-bar-item w3-button w3-border-round w3-padding"><img src="img/icon/icon-zalo-chat-white.png" alt="" style="width: 102%; height: 100%" class="w3-padding w3-blue w3-round"></a>			
 			<a href="https://www.facebook.com/buon.vui.3192" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-facebook-square w3-round w3-padding w3-indigo"></i></a>			
 			<a href="https://www.youtube.com/results?search_query=xe+cheng+long" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-youtube w3-round w3-padding w3-red"></i></a>			
 			<a href="#top" class="w3-bar-item w3-button w3-border-round"><i class="fa fa-home w3-round w3-padding w3-blue"></i></a>			
@@ -1152,6 +1323,25 @@
 		</div>
 	</div>
 	<!-- END Showroom and products -->
+
+	<!-- Phone ring -->
+	<div class="hotline-phone-ring-wrap">
+		<div class="hotline-phone-ring">
+			<div class="hotline-phone-ring-circle"></div>
+			<div class="hotline-phone-ring-circle-fill"></div>
+			<div class="hotline-phone-ring-img-circle">
+				<a href="tel:0933610331" class="pps-btn-img">
+					<img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+				</a>
+			</div>
+		</div>
+		<div class="hotline-bar">
+			<a href="tel:0933610331">
+				<span class="text-hotline">0933 610 331</span>
+			</a>
+		</div>
+	</div>
+	<!-- End Phone ring -->
 
 	<!-- Foolter -->
 	<div class="w3-container w3-indigo w3-center w3-padding-24">All rights reserved ©2021<br>CÔNG TY TNHH Ô TÔ HẢI ÂU <br>Chi nhánh Miền Tây<br> Website: <a href="http://thegioichenglong.com">http://thegioichenglong.com</a>
