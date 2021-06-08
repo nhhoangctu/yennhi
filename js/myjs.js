@@ -13,6 +13,22 @@ function carousel() {
 	setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+// Mobile
+var myIndex2 = 0;
+carousel2();
+
+function carousel2() {
+	var i;
+	var x = document.getElementsByClassName("_mobile_mySlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	myIndex2++;
+	if (myIndex2 > x.length) {myIndex2 = 1}    
+		x[myIndex2-1].style.display = "block";  
+	setTimeout(carousel2, 2000); // Change image every 2 seconds
+}
+
 function showBarItems(){
 	var x = document.getElementById("barItems");
 	if (x.className.indexOf("w3-show") == -1)
